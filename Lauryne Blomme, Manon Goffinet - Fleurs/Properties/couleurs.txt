@@ -1,0 +1,9 @@
+#FFA8AD rose
+#F5CD62 jaune
+#C48958 marron foncé
+#F2BB88 beige foncé
+#FFF2DE beige clair
+#BED264 vert clair
+#98BA5C vert foncé
+#A3D4FF bleu clair
+#62ACF5 bleu foncé

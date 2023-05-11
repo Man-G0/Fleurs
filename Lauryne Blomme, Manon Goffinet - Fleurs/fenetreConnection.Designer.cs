@@ -37,9 +37,15 @@
             boutonConnection = new Button();
             layoutBoutonConnexion = new TableLayoutPanel();
             labelErreurConnection = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             layoutForm1.SuspendLayout();
             layoutConnexion.SuspendLayout();
             layoutBoutonConnexion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // layoutForm1
@@ -51,6 +57,9 @@
             layoutForm1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 28.57143F));
             layoutForm1.Controls.Add(layoutConnexion, 1, 1);
             layoutForm1.Controls.Add(layoutBoutonConnexion, 1, 2);
+            layoutForm1.Controls.Add(pictureBox1, 2, 1);
+            layoutForm1.Controls.Add(pictureBox2, 0, 1);
+            layoutForm1.Controls.Add(pictureBox3, 1, 0);
             layoutForm1.Dock = DockStyle.Fill;
             layoutForm1.GrowStyle = TableLayoutPanelGrowStyle.FixedSize;
             layoutForm1.Location = new Point(0, 0);
@@ -170,6 +179,38 @@
             labelErreurConnection.Text = "root";
             labelErreurConnection.Visible = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Left;
+            pictureBox1.BackgroundImage = Properties.Resources.flowersPot;
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.Location = new Point(630, 207);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Right;
+            pictureBox2.Image = Properties.Resources.FlowerPot;
+            pictureBox2.Location = new Point(148, 207);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(100, 100);
+            pictureBox2.TabIndex = 11;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Bottom;
+            pictureBox3.Image = Properties.Resources.wateringCan;
+            pictureBox3.Location = new Point(389, 30);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(100, 100);
+            pictureBox3.TabIndex = 12;
+            pictureBox3.TabStop = false;
+            // 
             // fenetreConnection
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -182,10 +223,14 @@
             Name = "fenetreConnection";
             Size = new Size(879, 559);
             layoutForm1.ResumeLayout(false);
+            layoutForm1.PerformLayout();
             layoutConnexion.ResumeLayout(false);
             layoutConnexion.PerformLayout();
             layoutBoutonConnexion.ResumeLayout(false);
             layoutBoutonConnexion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -199,8 +244,8 @@
         private TableLayoutPanel layoutBoutonConnexion;
         private Button boutonConnection;
         private Label labelErreurConnection;
-
-
-
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

@@ -1,3 +1,4 @@
+using MySql.Data.MySqlClient;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
@@ -7,14 +8,21 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
     public partial class Form1 : Form
     {
         Dictionary<String, String> utilisateurMotdePasse = new Dictionary<String, String> { };
-        int boutique;
-        public Form1(int boutique)
+        int boutique = -1;
+        MySqlConnection connectionSQL;
+        public Form1(MySqlConnection connectionSQL)
         {
-            this.boutique = boutique;
+            this.connectionSQL = connectionSQL;
 
+            Bitmap bmp = new Bitmap(Properties.Resources.icon);
+            Icon icon = Icon.FromHandle(bmp.GetHicon());
+            Icon = icon;
             utilisateurMotdePasse.Add("root", "root");
             utilisateurMotdePasse.Add("bozo", "bozo");
             InitializeComponent();
+            Connexion();
+            ChoixBoutique();
+            InterfaceAdmin();
         }
 
         public int Boutique
@@ -22,12 +30,35 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             get { return boutique; }
             set { boutique = value; }
         }
+        public MySqlConnection ConnectionSQL
+        {
+            get { return connectionSQL; }
+            set { connectionSQL = value; }
+        }
 
-
-        public void changelayout1to2()
+        public void changelayout1toClientChoixBoutique()
         {
             layoutConnection.Hide();
             layoutChoixBoutiques.Visible = true;
+        }
+        public void changelayout1toInterfaceAdministrateur()
+        {
+            layoutConnection.Hide();
+            layoutInterfaceAdmin.Visible = true;
+        }
+        static MySqlDataReader ExecuteMysqlCommand(string strcommand, MySqlConnection connection)
+        {
+            MySqlCommand command = new MySqlCommand(strcommand, connection);
+            try
+            {
+                command.ExecuteNonQuery();
+
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur : " + e.ToString());
+            }
+            return command.ExecuteReader();
         }
 
     }

@@ -7,8 +7,8 @@
         Form1 form1;
         public fenetreConnection(Form1 form1)
         {
-
-            utilisateurMotdePasse.Add("root", "root");
+            utilisateurMotdePasse.Add("client", "client");
+            adminMotdePasse.Add("root", "root");
             adminMotdePasse.Add("bozo", "bozo");
             this.form1 = form1;
             InitializeComponent();
@@ -23,15 +23,27 @@
                 {
 
                     labelErreurConnection.Visible = false;
-                    form1.changelayout1to2();
+                    form1.changelayout1toClientChoixBoutique();
 
                 }
-                else if (!utilisateurMotdePasse.ContainsKey(utilisateur.Text))
+                else if (adminMotdePasse.ContainsKey(utilisateur.Text) && adminMotdePasse[utilisateur.Text] == mdp.Text)
+                {
+
+                    labelErreurConnection.Visible = false;
+                    form1.changelayout1toInterfaceAdministrateur();
+
+                }
+                else if (!utilisateurMotdePasse.ContainsKey(utilisateur.Text) && !adminMotdePasse.ContainsKey(utilisateur.Text))
                 {
                     labelErreurConnection.Text = "Nom d'utilisateur invalide";
                     labelErreurConnection.Visible = true;
                 }
-                else if (utilisateurMotdePasse[utilisateur.Text] != mdp.Text)
+                else if (adminMotdePasse.ContainsKey(utilisateur.Text) && adminMotdePasse[utilisateur.Text] != mdp.Text)
+                {
+                    labelErreurConnection.Text = "Mot de passe incorrect";
+                    labelErreurConnection.Visible = true;
+                }
+                else if (utilisateurMotdePasse.ContainsKey(utilisateur.Text) && utilisateurMotdePasse[utilisateur.Text] != mdp.Text)
                 {
                     labelErreurConnection.Text = "Mot de passe incorrect";
                     labelErreurConnection.Visible = true;
@@ -43,5 +55,7 @@
                 labelErreurConnection.Visible = true;
             }
         }
+
+
     }
 }

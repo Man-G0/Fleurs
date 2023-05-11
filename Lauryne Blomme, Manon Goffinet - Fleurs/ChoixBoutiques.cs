@@ -30,10 +30,12 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             }
             else
             {
-                
-                labelBoutiques.ForeColor = Color.FromArgb(196,0,30);
+
+                labelBoutiques.ForeColor = Color.FromArgb(196, 0, 30);
             }
-            
+
         }
+
+        
     }
 }

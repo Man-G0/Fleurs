@@ -33,16 +33,8 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
         {
             layoutConnection = new TableLayoutPanel();
             layoutChoixBoutiques = new TableLayoutPanel();
-            connection = new fenetreConnection(this);
-            choixBoutique = new ChoixBoutiques(this);
+            layoutInterfaceAdmin = new TableLayoutPanel();
             SuspendLayout();
-            //
-            // connection
-            //
-            connection.AutoSize = true;
-            connection.Dock = DockStyle.Fill;
-            connection.Location = new Point(0, 0);
-            connection.Name = "connection";
             // 
             // layoutConnection
             // 
@@ -51,19 +43,10 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             layoutConnection.Dock = DockStyle.Fill;
             layoutConnection.Location = new Point(0, 0);
             layoutConnection.Name = "layoutConnection";
-            layoutConnection.Controls.Add(connection);
             layoutConnection.RowCount = 1;
             layoutConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            layoutConnection.Size = new Size(1017, 538);
+            layoutConnection.Size = new Size(882, 523);
             layoutConnection.TabIndex = 0;
-
-            //
-            // choix boutique
-            //
-            choixBoutique.AutoSize = true;
-            choixBoutique.Dock = DockStyle.Fill;
-            choixBoutique.Location = new Point(0, 0);
-            choixBoutique.Name = "choixBoutique";
             // 
             // layoutChoixBoutiques
             // 
@@ -76,21 +59,71 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             layoutChoixBoutiques.RowCount = 1;
             layoutChoixBoutiques.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             layoutChoixBoutiques.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            layoutChoixBoutiques.Size = new Size(850, 500);
-            layoutChoixBoutiques.Controls.Add(choixBoutique);
+            layoutChoixBoutiques.Size = new Size(882, 523);
             layoutChoixBoutiques.TabIndex = 1;
             layoutChoixBoutiques.Visible = false;
-
-
+            // 
+            // layoutInterfaceAdmin
+            // 
+            layoutInterfaceAdmin.ColumnCount = 1;
+            layoutInterfaceAdmin.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            layoutInterfaceAdmin.Dock = DockStyle.Fill;
+            layoutInterfaceAdmin.Location = new Point(0, 0);
+            layoutInterfaceAdmin.Name = "layoutInterfaceAdmin";
+            layoutInterfaceAdmin.RowCount = 1;
+            layoutInterfaceAdmin.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            layoutInterfaceAdmin.Size = new Size(882, 523);
+            layoutInterfaceAdmin.TabIndex = 2;
+            layoutInterfaceAdmin.Visible = false;
             // 
             // Form1
             // 
-            ClientSize = new Size(800, 500);
+            ClientSize = new Size(882, 523);
             Controls.Add(layoutChoixBoutiques);
             Controls.Add(layoutConnection);
+            Controls.Add(layoutInterfaceAdmin);
+            Location = new Point(800, 500);
             MinimumSize = new Size(800, 500);
             Name = "Form1";
             ResumeLayout(false);
+        }
+
+        private void Connexion()
+        {
+            //
+            // connection
+            //
+            connection = new fenetreConnection(this);
+            Controls.Add(connection);
+            connection.Name = "Connection";
+            connection.Dock = DockStyle.Fill;
+            layoutConnection.Controls.Add(connection, 0, 0);
+        }
+
+        private void ChoixBoutique()
+        {
+            //
+            // Choix boutique
+            //
+            choixBoutique = new ChoixBoutiques(this);
+            Controls.Add(choixBoutique);
+            choixBoutique.Name = "choixBoutique";
+            choixBoutique.Dock = DockStyle.Fill;
+            layoutChoixBoutiques.Controls.Add(choixBoutique, 0, 0);
+            layoutChoixBoutiques.Hide();
+        }
+
+        private void InterfaceAdmin()
+        {
+            //
+            // Interface Adlin
+            //
+            interfaceAdmin = new InterfaceAdmin(this);
+            Controls.Add(interfaceAdmin);
+            interfaceAdmin.Name = "interfaceAdmin";
+            interfaceAdmin.Dock = DockStyle.Fill;
+            layoutInterfaceAdmin.Controls.Add(interfaceAdmin, 0, 0);
+            layoutInterfaceAdmin.Hide();
         }
 
         #endregion
@@ -98,5 +131,7 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
         private fenetreConnection connection;
         private TableLayoutPanel layoutChoixBoutiques;
         private ChoixBoutiques choixBoutique;
+        private TableLayoutPanel layoutInterfaceAdmin;
+        private InterfaceAdmin interfaceAdmin;
     }
 }
