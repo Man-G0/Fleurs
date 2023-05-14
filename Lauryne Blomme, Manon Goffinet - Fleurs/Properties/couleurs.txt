@@ -1,9 +1,10 @@
-#FFA8AD rose
-#F5CD62 jaune
-#C48958 marron foncé
-#F2BB88 beige foncé
-#FFF2DE beige clair
-#BED264 vert clair
-#98BA5C vert foncé
-#A3D4FF bleu clair
-#62ACF5 bleu foncé
+Berlin Sans FB; 13,8pt
+#FFA8AD rose 255, 168, 173
+#F5CD62 jaune 245, 205, 98
+#C48958 marron foncé 196, 137, 88
+#F2BB88 beige foncé 242, 187, 136
+#FFF2DE beige clair 255, 242, 222
+#BED264 vert clair 190, 210, 100
+#98BA5C vert foncé 152, 186, 92
+#A3D4FF bleu clair 163, 212, 255
+#62ACF5 bleu foncé 98, 172, 245

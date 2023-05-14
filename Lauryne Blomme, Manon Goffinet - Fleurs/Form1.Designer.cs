@@ -78,12 +78,13 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             // 
             // Form1
             // 
-            ClientSize = new Size(882, 523);
+            ClientSize = new Size(900, 550);
             Controls.Add(layoutChoixBoutiques);
             Controls.Add(layoutConnection);
             Controls.Add(layoutInterfaceAdmin);
-            Location = new Point(800, 500);
-            MinimumSize = new Size(800, 500);
+            StartPosition = FormStartPosition.Manual;
+            Location = new System.Drawing.Point((Screen.PrimaryScreen.Bounds.Width-this.Width)/2,(Screen.PrimaryScreen.Bounds.Height-this.Height)/2);
+            MinimumSize = new Size(900, 550);
             Name = "Form1";
             ResumeLayout(false);
         }

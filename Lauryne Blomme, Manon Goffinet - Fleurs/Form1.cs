@@ -46,8 +46,13 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             layoutConnection.Hide();
             layoutInterfaceAdmin.Visible = true;
         }
-        static MySqlDataReader ExecuteMysqlCommand(string strcommand, MySqlConnection connection)
+        public void ExecuteMysqlCommand(string strcommand, MySqlConnection connection)
         {
+            if (connection.State.ToString()!="Open")
+            {
+                connection.Open();
+            }
+           
             MySqlCommand command = new MySqlCommand(strcommand, connection);
             try
             {
@@ -58,7 +63,8 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             {
                 Console.WriteLine("Erreur : " + e.ToString());
             }
-            return command.ExecuteReader();
+            connection.Close();
+                        
         }
 
     }
