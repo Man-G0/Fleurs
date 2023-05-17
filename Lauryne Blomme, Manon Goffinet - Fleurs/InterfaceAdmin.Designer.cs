@@ -41,7 +41,6 @@
             toolStripButton2 = new ToolStripButton();
             toolStripButton7 = new ToolStripButton();
             toolStripButton8 = new ToolStripButton();
-            dataGridView1 = new DataGridView();
             tabPage4 = new TabPage();
             tableLayoutPanel5 = new TableLayoutPanel();
             toolStrip4 = new ToolStrip();
@@ -72,12 +71,10 @@
             toolStripButton14 = new ToolStripButton();
             dataGridView3 = new DataGridView();
             tableLayoutPanel6 = new TableLayoutPanel();
-            tabPage3 = new TabPage();
+            miniToolStrip = new ToolStrip();
+            pageProduits = new TabPage();
             tableLayoutPanel9 = new TableLayoutPanel();
             toolStrip8 = new ToolStrip();
-            toolStripLabel27 = new ToolStripLabel();
-            toolStripComboBox16 = new ToolStripComboBox();
-            toolStripSeparator16 = new ToolStripSeparator();
             toolStripLabel28 = new ToolStripLabel();
             toolStripLabel29 = new ToolStripLabel();
             toolStripComboBox17 = new ToolStripComboBox();
@@ -85,27 +82,23 @@
             toolStripLabel30 = new ToolStripLabel();
             toolStripButton21 = new ToolStripButton();
             toolStripButton22 = new ToolStripButton();
-            toolStripButton23 = new ToolStripButton();
-            dataGridView6 = new DataGridView();
-            miniToolStrip = new ToolStrip();
-            tabPage2 = new TabPage();
+            modifierProduit = new ToolStripButton();
+            dataProduit = new DataGridView();
+            pageBouquetsStandards = new TabPage();
             tableLayoutPanel8 = new TableLayoutPanel();
             toolStrip7 = new ToolStrip();
             toolStripLabel23 = new ToolStripLabel();
             toolStripComboBox14 = new ToolStripComboBox();
             toolStripSeparator14 = new ToolStripSeparator();
-            toolStripLabel24 = new ToolStripLabel();
             toolStripLabel25 = new ToolStripLabel();
-            toolStripComboBox15 = new ToolStripComboBox();
-            toolStripSeparator15 = new ToolStripSeparator();
             toolStripLabel26 = new ToolStripLabel();
             toolStripButton18 = new ToolStripButton();
             toolStripButton19 = new ToolStripButton();
-            toolStripButton20 = new ToolStripButton();
-            dataGridView5 = new DataGridView();
-            tabPage1 = new TabPage();
+            modifierBouquetStandard = new ToolStripButton();
+            dataBouquetStandard = new DataGridView();
+            pageCommandes = new TabPage();
             tableLayoutPanel7 = new TableLayoutPanel();
-            toolStrip6 = new ToolStrip();
+            toolStripCommande = new ToolStrip();
             toolStripLabel19 = new ToolStripLabel();
             toolStripComboBox12 = new ToolStripComboBox();
             toolStripSeparator12 = new ToolStripSeparator();
@@ -116,47 +109,21 @@
             toolStripLabel22 = new ToolStripLabel();
             toolStripButton15 = new ToolStripButton();
             toolStripButton16 = new ToolStripButton();
-            toolStripButton17 = new ToolStripButton();
-            dataGridView4 = new DataGridView();
+            modifierCommande = new ToolStripButton();
+            dataCommandes = new DataGridView();
             PageClient = new TabPage();
             tableLayoutPanel3 = new TableLayoutPanel();
+            dataClients = new DataGridView();
             toolStrip2 = new ToolStrip();
             toolStripLabel3 = new ToolStripLabel();
             toolStripComboBox3 = new ToolStripComboBox();
             toolStripSeparator3 = new ToolStripSeparator();
-            toolStripLabel4 = new ToolStripLabel();
             toolStripLabel6 = new ToolStripLabel();
-            toolStripComboBox4 = new ToolStripComboBox();
-            toolStripSeparator4 = new ToolStripSeparator();
             toolStripLabel31 = new ToolStripLabel();
             toolStripButton4 = new ToolStripButton();
             toolStripButton5 = new ToolStripButton();
-            toolStripButton6 = new ToolStripButton();
-            PageBoutique = new TabPage();
-            Boutiques = new TableLayoutPanel();
-            toolStrip10 = new ToolStrip();
-            toolStripLabel38 = new ToolStripLabel();
-            toolStripLabel39 = new ToolStripLabel();
-            toolStripButton26 = new ToolStripButton();
-            toolStripButton27 = new ToolStripButton();
-            toolStripButton28 = new ToolStripButton();
-            toolStrip9 = new ToolStrip();
-            toolStripLabel32 = new ToolStripLabel();
-            toolStripComboBox18 = new ToolStripComboBox();
-            toolStripSeparator18 = new ToolStripSeparator();
-            toolStripLabel33 = new ToolStripLabel();
-            toolStripLabel34 = new ToolStripLabel();
-            toolStripComboBox19 = new ToolStripComboBox();
-            toolStripSeparator19 = new ToolStripSeparator();
-            toolStripLabel35 = new ToolStripLabel();
-            toolStripButton1 = new ToolStripButton();
-            toolStripButton24 = new ToolStripButton();
-            toolStripButton25 = new ToolStripButton();
-            DataBoutique = new DataGridView();
-            Accueil = new TabPage();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            Admin = new TabControl();
-            PageProduits = new TabPage();
+            modifierClient = new ToolStripButton();
+            pageStock = new TabPage();
             tableLayoutPanel2 = new TableLayoutPanel();
             toolStrip1 = new ToolStrip();
             toolStripLabel1 = new ToolStripLabel();
@@ -171,41 +138,109 @@
             toolStripButton3 = new ToolStripButton();
             modifierStock = new ToolStripButton();
             DataStock = new DataGridView();
+            PageBoutique = new TabPage();
+            Boutiques = new TableLayoutPanel();
+            toolStripBoutique = new ToolStrip();
+            toolStripLabel38 = new ToolStripLabel();
+            toolStripLabel39 = new ToolStripLabel();
+            ajouterBoutique = new ToolStripButton();
+            toolStripButton27 = new ToolStripButton();
+            modifierBoutique = new ToolStripButton();
+            DataBoutique = new DataGridView();
+            Accueil = new TabPage();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            pageAdmin = new TabControl();
+            pageBouquetPerso = new TabPage();
+            tableLayoutPanel11 = new TableLayoutPanel();
+            toolStrip11 = new ToolStrip();
+            toolStripLabel40 = new ToolStripLabel();
+            toolStripLabel41 = new ToolStripLabel();
+            toolStripButton17 = new ToolStripButton();
+            toolStripButton30 = new ToolStripButton();
+            toolStripButton31 = new ToolStripButton();
+            dataBouquetPerso = new DataGridView();
+            pageEtat = new TabPage();
+            Etat = new TableLayoutPanel();
+            toolStrip10 = new ToolStrip();
+            toolStripLabel35 = new ToolStripLabel();
+            toolStripLabel36 = new ToolStripLabel();
+            toolStripButton26 = new ToolStripButton();
+            toolStripButton28 = new ToolStripButton();
+            toolStripButton29 = new ToolStripButton();
+            dataEtat = new DataGridView();
+            toolStrip6 = new ToolStrip();
+            toolStripLabel4 = new ToolStripLabel();
+            toolStripComboBox4 = new ToolStripComboBox();
+            toolStripSeparator4 = new ToolStripSeparator();
+            toolStripLabel24 = new ToolStripLabel();
+            toolStripLabel27 = new ToolStripLabel();
+            toolStripComboBox15 = new ToolStripComboBox();
+            toolStripSeparator15 = new ToolStripSeparator();
+            toolStripLabel32 = new ToolStripLabel();
+            toolStripButton1 = new ToolStripButton();
+            toolStripButton6 = new ToolStripButton();
+            toolStripButton20 = new ToolStripButton();
+            dataGridView4 = new DataGridView();
+            tableLayoutPanel10 = new TableLayoutPanel();
+            dataGridView5 = new DataGridView();
+            tableLayoutPanel12 = new TableLayoutPanel();
+            toolStrip9 = new ToolStrip();
+            toolStripLabel33 = new ToolStripLabel();
+            toolStripLabel34 = new ToolStripLabel();
+            toolStripButton23 = new ToolStripButton();
+            toolStripButton24 = new ToolStripButton();
+            toolStripButton25 = new ToolStripButton();
+            dataGridView1 = new DataGridView();
+            tableLayoutPanel13 = new TableLayoutPanel();
             tableLayoutPanel4.SuspendLayout();
             toolStrip3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tableLayoutPanel5.SuspendLayout();
             toolStrip4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             toolStrip5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             tableLayoutPanel6.SuspendLayout();
-            tabPage3.SuspendLayout();
+            pageProduits.SuspendLayout();
             tableLayoutPanel9.SuspendLayout();
             toolStrip8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView6).BeginInit();
-            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataProduit).BeginInit();
+            pageBouquetsStandards.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
             toolStrip7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView5).BeginInit();
-            tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataBouquetStandard).BeginInit();
+            pageCommandes.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
-            toolStrip6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
+            toolStripCommande.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataCommandes).BeginInit();
             PageClient.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataClients).BeginInit();
             toolStrip2.SuspendLayout();
-            PageBoutique.SuspendLayout();
-            Boutiques.SuspendLayout();
-            toolStrip10.SuspendLayout();
-            toolStrip9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)DataBoutique).BeginInit();
-            Accueil.SuspendLayout();
-            Admin.SuspendLayout();
-            PageProduits.SuspendLayout();
+            pageStock.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataStock).BeginInit();
+            PageBoutique.SuspendLayout();
+            Boutiques.SuspendLayout();
+            toolStripBoutique.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DataBoutique).BeginInit();
+            Accueil.SuspendLayout();
+            pageAdmin.SuspendLayout();
+            pageBouquetPerso.SuspendLayout();
+            tableLayoutPanel11.SuspendLayout();
+            toolStrip11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataBouquetPerso).BeginInit();
+            pageEtat.SuspendLayout();
+            Etat.SuspendLayout();
+            toolStrip10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataEtat).BeginInit();
+            toolStrip6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
+            tableLayoutPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView5).BeginInit();
+            toolStrip9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tableLayoutPanel13.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel4
@@ -308,20 +343,6 @@
             toolStripButton8.Name = "toolStripButton8";
             toolStripButton8.Size = new Size(90, 24);
             toolStripButton8.Text = "Modifier";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 32);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(194, 307);
-            dataGridView1.TabIndex = 2;
             // 
             // tabPage4
             // 
@@ -569,23 +590,41 @@
             tableLayoutPanel6.Size = new Size(200, 100);
             tableLayoutPanel6.TabIndex = 0;
             // 
-            // tabPage3
+            // miniToolStrip
             // 
-            tabPage3.Controls.Add(tableLayoutPanel9);
-            tabPage3.Location = new Point(4, 35);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(892, 511);
-            tabPage3.TabIndex = 6;
-            tabPage3.Text = "Produits";
-            tabPage3.UseVisualStyleBackColor = true;
+            miniToolStrip.AccessibleName = "Nouvelle sélection d'élément";
+            miniToolStrip.AccessibleRole = AccessibleRole.ButtonDropDown;
+            miniToolStrip.AutoSize = false;
+            miniToolStrip.BackColor = Color.WhiteSmoke;
+            miniToolStrip.CanOverflow = false;
+            miniToolStrip.Dock = DockStyle.None;
+            miniToolStrip.GripStyle = ToolStripGripStyle.Hidden;
+            miniToolStrip.ImageScalingSize = new Size(20, 20);
+            miniToolStrip.Location = new Point(1, 29);
+            miniToolStrip.Name = "miniToolStrip";
+            miniToolStrip.RenderMode = ToolStripRenderMode.System;
+            miniToolStrip.Size = new Size(900, 49);
+            miniToolStrip.Stretch = true;
+            miniToolStrip.TabIndex = 1;
+            // 
+            // pageProduits
+            // 
+            pageProduits.BackColor = Color.FromArgb(163, 212, 255);
+            pageProduits.Controls.Add(tableLayoutPanel9);
+            pageProduits.Location = new Point(4, 35);
+            pageProduits.Name = "pageProduits";
+            pageProduits.Padding = new Padding(3);
+            pageProduits.Size = new Size(892, 511);
+            pageProduits.TabIndex = 6;
+            pageProduits.Text = "Produits";
             // 
             // tableLayoutPanel9
             // 
+            tableLayoutPanel9.BackColor = Color.FromArgb(163, 212, 255);
             tableLayoutPanel9.ColumnCount = 1;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel9.Controls.Add(toolStrip8, 0, 0);
-            tableLayoutPanel9.Controls.Add(dataGridView6, 0, 1);
+            tableLayoutPanel9.Controls.Add(dataProduit, 0, 1);
             tableLayoutPanel9.Dock = DockStyle.Fill;
             tableLayoutPanel9.Location = new Point(3, 3);
             tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -600,7 +639,7 @@
             toolStrip8.BackColor = Color.WhiteSmoke;
             toolStrip8.Dock = DockStyle.Fill;
             toolStrip8.ImageScalingSize = new Size(20, 20);
-            toolStrip8.Items.AddRange(new ToolStripItem[] { toolStripLabel27, toolStripComboBox16, toolStripSeparator16, toolStripLabel28, toolStripLabel29, toolStripComboBox17, toolStripSeparator17, toolStripLabel30, toolStripButton21, toolStripButton22, toolStripButton23 });
+            toolStrip8.Items.AddRange(new ToolStripItem[] { toolStripLabel28, toolStripLabel29, toolStripComboBox17, toolStripSeparator17, toolStripLabel30, toolStripButton21, toolStripButton22, modifierProduit });
             toolStrip8.Location = new Point(0, 0);
             toolStrip8.Name = "toolStrip8";
             toolStrip8.RenderMode = ToolStripRenderMode.System;
@@ -609,30 +648,12 @@
             toolStrip8.TabIndex = 1;
             toolStrip8.Text = "toolStrip8";
             // 
-            // toolStripLabel27
-            // 
-            toolStripLabel27.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripLabel27.Name = "toolStripLabel27";
-            toolStripLabel27.Size = new Size(87, 37);
-            toolStripLabel27.Text = "Magasin :";
-            // 
-            // toolStripComboBox16
-            // 
-            toolStripComboBox16.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripComboBox16.Name = "toolStripComboBox16";
-            toolStripComboBox16.Size = new Size(140, 40);
-            // 
-            // toolStripSeparator16
-            // 
-            toolStripSeparator16.Name = "toolStripSeparator16";
-            toolStripSeparator16.Size = new Size(6, 40);
-            // 
             // toolStripLabel28
             // 
             toolStripLabel28.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripLabel28.Name = "toolStripLabel28";
-            toolStripLabel28.Size = new Size(82, 37);
-            toolStripLabel28.Text = "Produit :";
+            toolStripLabel28.Size = new Size(61, 37);
+            toolStripLabel28.Text = "Type :";
             // 
             // toolStripLabel29
             // 
@@ -644,6 +665,7 @@
             toolStripComboBox17.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripComboBox17.Name = "toolStripComboBox17";
             toolStripComboBox17.Size = new Size(154, 40);
+            toolStripComboBox17.SelectedIndexChanged += toolStripComboBox17_SelectedIndexChanged;
             // 
             // toolStripSeparator17
             // 
@@ -664,6 +686,7 @@
             toolStripButton21.Name = "toolStripButton21";
             toolStripButton21.Size = new Size(82, 37);
             toolStripButton21.Text = "Ajouter";
+            toolStripButton21.Click += toolStripButton21_Click;
             // 
             // toolStripButton22
             // 
@@ -672,62 +695,51 @@
             toolStripButton22.Name = "toolStripButton22";
             toolStripButton22.Size = new Size(102, 37);
             toolStripButton22.Text = "Supprimer";
+            toolStripButton22.Click += toolStripButton22_Click;
             // 
-            // toolStripButton23
+            // modifierProduit
             // 
-            toolStripButton23.Image = Properties.Resources.modify;
-            toolStripButton23.ImageTransparentColor = Color.Magenta;
-            toolStripButton23.Name = "toolStripButton23";
-            toolStripButton23.Size = new Size(90, 37);
-            toolStripButton23.Text = "Modifier";
+            modifierProduit.Image = Properties.Resources.modify;
+            modifierProduit.ImageTransparentColor = Color.Magenta;
+            modifierProduit.Name = "modifierProduit";
+            modifierProduit.Size = new Size(90, 37);
+            modifierProduit.Text = "Modifier";
+            modifierProduit.Visible = false;
             // 
-            // dataGridView6
+            // dataProduit
             // 
-            dataGridView6.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView6.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridView6.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView6.Dock = DockStyle.Fill;
-            dataGridView6.Location = new Point(3, 43);
-            dataGridView6.Name = "dataGridView6";
-            dataGridView6.RowHeadersWidth = 51;
-            dataGridView6.RowTemplate.Height = 29;
-            dataGridView6.Size = new Size(880, 459);
-            dataGridView6.TabIndex = 2;
+            dataProduit.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataProduit.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataProduit.BackgroundColor = Color.FromArgb(163, 212, 255);
+            dataProduit.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataProduit.Dock = DockStyle.Fill;
+            dataProduit.Location = new Point(3, 43);
+            dataProduit.Name = "dataProduit";
+            dataProduit.RowHeadersWidth = 51;
+            dataProduit.RowTemplate.Height = 29;
+            dataProduit.Size = new Size(880, 459);
+            dataProduit.TabIndex = 2;
+            dataProduit.CellBeginEdit += DataProduit_CellBeginEdit;
+            dataProduit.CellValueChanged += DataProduit_CellValueChanged;
+            dataProduit.DataError += DataProduit_DataError;
             // 
-            // miniToolStrip
+            // pageBouquetsStandards
             // 
-            miniToolStrip.AccessibleName = "Nouvelle sélection d'élément";
-            miniToolStrip.AccessibleRole = AccessibleRole.ButtonDropDown;
-            miniToolStrip.AutoSize = false;
-            miniToolStrip.BackColor = Color.WhiteSmoke;
-            miniToolStrip.CanOverflow = false;
-            miniToolStrip.Dock = DockStyle.None;
-            miniToolStrip.GripStyle = ToolStripGripStyle.Hidden;
-            miniToolStrip.ImageScalingSize = new Size(20, 20);
-            miniToolStrip.Location = new Point(1, 29);
-            miniToolStrip.Name = "miniToolStrip";
-            miniToolStrip.RenderMode = ToolStripRenderMode.System;
-            miniToolStrip.Size = new Size(900, 49);
-            miniToolStrip.Stretch = true;
-            miniToolStrip.TabIndex = 1;
-            // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(tableLayoutPanel8);
-            tabPage2.Location = new Point(4, 35);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(892, 511);
-            tabPage2.TabIndex = 5;
-            tabPage2.Text = "Bouquet standard";
-            tabPage2.UseVisualStyleBackColor = true;
+            pageBouquetsStandards.BackColor = Color.FromArgb(163, 212, 255);
+            pageBouquetsStandards.Controls.Add(tableLayoutPanel8);
+            pageBouquetsStandards.Location = new Point(4, 35);
+            pageBouquetsStandards.Name = "pageBouquetsStandards";
+            pageBouquetsStandards.Padding = new Padding(3);
+            pageBouquetsStandards.Size = new Size(892, 511);
+            pageBouquetsStandards.TabIndex = 5;
+            pageBouquetsStandards.Text = "Bouquets standards";
             // 
             // tableLayoutPanel8
             // 
             tableLayoutPanel8.ColumnCount = 1;
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel8.Controls.Add(toolStrip7, 0, 0);
-            tableLayoutPanel8.Controls.Add(dataGridView5, 0, 1);
+            tableLayoutPanel8.Controls.Add(dataBouquetStandard, 0, 1);
             tableLayoutPanel8.Dock = DockStyle.Fill;
             tableLayoutPanel8.Location = new Point(3, 3);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -742,7 +754,7 @@
             toolStrip7.BackColor = Color.WhiteSmoke;
             toolStrip7.Dock = DockStyle.Fill;
             toolStrip7.ImageScalingSize = new Size(20, 20);
-            toolStrip7.Items.AddRange(new ToolStripItem[] { toolStripLabel23, toolStripComboBox14, toolStripSeparator14, toolStripLabel24, toolStripLabel25, toolStripComboBox15, toolStripSeparator15, toolStripLabel26, toolStripButton18, toolStripButton19, toolStripButton20 });
+            toolStrip7.Items.AddRange(new ToolStripItem[] { toolStripLabel23, toolStripComboBox14, toolStripSeparator14, toolStripLabel25, toolStripLabel26, toolStripButton18, toolStripButton19, modifierBouquetStandard });
             toolStrip7.Location = new Point(0, 0);
             toolStrip7.Name = "toolStrip7";
             toolStrip7.RenderMode = ToolStripRenderMode.System;
@@ -755,42 +767,25 @@
             // 
             toolStripLabel23.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripLabel23.Name = "toolStripLabel23";
-            toolStripLabel23.Size = new Size(87, 37);
-            toolStripLabel23.Text = "Magasin :";
+            toolStripLabel23.Size = new Size(92, 37);
+            toolStripLabel23.Text = "Occasion :";
             // 
             // toolStripComboBox14
             // 
             toolStripComboBox14.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripComboBox14.Name = "toolStripComboBox14";
             toolStripComboBox14.Size = new Size(140, 40);
+            toolStripComboBox14.SelectedIndexChanged += toolStripComboBox14_SelectedIndexChanged;
             // 
             // toolStripSeparator14
             // 
             toolStripSeparator14.Name = "toolStripSeparator14";
             toolStripSeparator14.Size = new Size(6, 40);
             // 
-            // toolStripLabel24
-            // 
-            toolStripLabel24.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripLabel24.Name = "toolStripLabel24";
-            toolStripLabel24.Size = new Size(82, 37);
-            toolStripLabel24.Text = "Produit :";
-            // 
             // toolStripLabel25
             // 
             toolStripLabel25.Name = "toolStripLabel25";
             toolStripLabel25.Size = new Size(0, 37);
-            // 
-            // toolStripComboBox15
-            // 
-            toolStripComboBox15.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripComboBox15.Name = "toolStripComboBox15";
-            toolStripComboBox15.Size = new Size(154, 40);
-            // 
-            // toolStripSeparator15
-            // 
-            toolStripSeparator15.Name = "toolStripSeparator15";
-            toolStripSeparator15.Size = new Size(6, 40);
             // 
             // toolStripLabel26
             // 
@@ -806,6 +801,7 @@
             toolStripButton18.Name = "toolStripButton18";
             toolStripButton18.Size = new Size(82, 37);
             toolStripButton18.Text = "Ajouter";
+            toolStripButton18.Click += toolStripButton18_Click;
             // 
             // toolStripButton19
             // 
@@ -814,45 +810,50 @@
             toolStripButton19.Name = "toolStripButton19";
             toolStripButton19.Size = new Size(102, 37);
             toolStripButton19.Text = "Supprimer";
+            toolStripButton19.Click += toolStripButton19_Click;
             // 
-            // toolStripButton20
+            // modifierBouquetStandard
             // 
-            toolStripButton20.Image = Properties.Resources.modify;
-            toolStripButton20.ImageTransparentColor = Color.Magenta;
-            toolStripButton20.Name = "toolStripButton20";
-            toolStripButton20.Size = new Size(90, 37);
-            toolStripButton20.Text = "Modifier";
+            modifierBouquetStandard.Image = Properties.Resources.modify;
+            modifierBouquetStandard.ImageTransparentColor = Color.Magenta;
+            modifierBouquetStandard.Name = "modifierBouquetStandard";
+            modifierBouquetStandard.Size = new Size(90, 37);
+            modifierBouquetStandard.Text = "Modifier";
+            modifierBouquetStandard.Visible = false;
             // 
-            // dataGridView5
+            // dataBouquetStandard
             // 
-            dataGridView5.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView5.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridView5.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView5.Dock = DockStyle.Fill;
-            dataGridView5.Location = new Point(3, 43);
-            dataGridView5.Name = "dataGridView5";
-            dataGridView5.RowHeadersWidth = 51;
-            dataGridView5.RowTemplate.Height = 29;
-            dataGridView5.Size = new Size(880, 459);
-            dataGridView5.TabIndex = 2;
+            dataBouquetStandard.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataBouquetStandard.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataBouquetStandard.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataBouquetStandard.Dock = DockStyle.Fill;
+            dataBouquetStandard.Location = new Point(3, 43);
+            dataBouquetStandard.Name = "dataBouquetStandard";
+            dataBouquetStandard.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataBouquetStandard.RowTemplate.Height = 29;
+            dataBouquetStandard.Size = new Size(880, 459);
+            dataBouquetStandard.TabIndex = 2;
+            dataBouquetStandard.CellBeginEdit += DataBouquetStandard_CellBeginEdit;
+            dataBouquetStandard.CellValueChanged += DataBouquetStandard_CellValueChanged;
+            dataBouquetStandard.DataError += DataBouquetStandard_DataError;
             // 
-            // tabPage1
+            // pageCommandes
             // 
-            tabPage1.Controls.Add(tableLayoutPanel7);
-            tabPage1.Location = new Point(4, 35);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(892, 511);
-            tabPage1.TabIndex = 4;
-            tabPage1.Text = "Commande";
-            tabPage1.UseVisualStyleBackColor = true;
+            pageCommandes.BackColor = Color.FromArgb(163, 212, 255);
+            pageCommandes.Controls.Add(tableLayoutPanel7);
+            pageCommandes.Location = new Point(4, 35);
+            pageCommandes.Name = "pageCommandes";
+            pageCommandes.Padding = new Padding(3);
+            pageCommandes.Size = new Size(892, 511);
+            pageCommandes.TabIndex = 4;
+            pageCommandes.Text = "Commandes";
             // 
             // tableLayoutPanel7
             // 
             tableLayoutPanel7.ColumnCount = 1;
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.Controls.Add(toolStrip6, 0, 0);
-            tableLayoutPanel7.Controls.Add(dataGridView4, 0, 1);
+            tableLayoutPanel7.Controls.Add(toolStripCommande, 0, 0);
+            tableLayoutPanel7.Controls.Add(dataCommandes, 0, 1);
             tableLayoutPanel7.Dock = DockStyle.Fill;
             tableLayoutPanel7.Location = new Point(3, 3);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -862,19 +863,19 @@
             tableLayoutPanel7.Size = new Size(886, 505);
             tableLayoutPanel7.TabIndex = 1;
             // 
-            // toolStrip6
+            // toolStripCommande
             // 
-            toolStrip6.BackColor = Color.WhiteSmoke;
-            toolStrip6.Dock = DockStyle.Fill;
-            toolStrip6.ImageScalingSize = new Size(20, 20);
-            toolStrip6.Items.AddRange(new ToolStripItem[] { toolStripLabel19, toolStripComboBox12, toolStripSeparator12, toolStripLabel20, toolStripLabel21, toolStripComboBox13, toolStripSeparator13, toolStripLabel22, toolStripButton15, toolStripButton16, toolStripButton17 });
-            toolStrip6.Location = new Point(0, 0);
-            toolStrip6.Name = "toolStrip6";
-            toolStrip6.RenderMode = ToolStripRenderMode.System;
-            toolStrip6.Size = new Size(886, 40);
-            toolStrip6.Stretch = true;
-            toolStrip6.TabIndex = 1;
-            toolStrip6.Text = "toolStrip6";
+            toolStripCommande.BackColor = Color.WhiteSmoke;
+            toolStripCommande.Dock = DockStyle.Fill;
+            toolStripCommande.ImageScalingSize = new Size(20, 20);
+            toolStripCommande.Items.AddRange(new ToolStripItem[] { toolStripLabel19, toolStripComboBox12, toolStripSeparator12, toolStripLabel20, toolStripLabel21, toolStripComboBox13, toolStripSeparator13, toolStripLabel22, toolStripButton15, toolStripButton16, modifierCommande });
+            toolStripCommande.Location = new Point(0, 0);
+            toolStripCommande.Name = "toolStripCommande";
+            toolStripCommande.RenderMode = ToolStripRenderMode.System;
+            toolStripCommande.Size = new Size(886, 40);
+            toolStripCommande.Stretch = true;
+            toolStripCommande.TabIndex = 1;
+            toolStripCommande.Text = "toolStrip6";
             // 
             // toolStripLabel19
             // 
@@ -887,7 +888,8 @@
             // 
             toolStripComboBox12.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripComboBox12.Name = "toolStripComboBox12";
-            toolStripComboBox12.Size = new Size(140, 40);
+            toolStripComboBox12.Size = new Size(130, 40);
+            toolStripComboBox12.SelectedIndexChanged += toolStripComboBox12_SelectedIndexChanged;
             // 
             // toolStripSeparator12
             // 
@@ -898,8 +900,8 @@
             // 
             toolStripLabel20.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripLabel20.Name = "toolStripLabel20";
-            toolStripLabel20.Size = new Size(82, 37);
-            toolStripLabel20.Text = "Produit :";
+            toolStripLabel20.Size = new Size(103, 37);
+            toolStripLabel20.Text = "Code état :";
             // 
             // toolStripLabel21
             // 
@@ -910,7 +912,8 @@
             // 
             toolStripComboBox13.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripComboBox13.Name = "toolStripComboBox13";
-            toolStripComboBox13.Size = new Size(154, 40);
+            toolStripComboBox13.Size = new Size(130, 40);
+            toolStripComboBox13.SelectedIndexChanged += toolStripComboBox13_SelectedIndexChanged;
             // 
             // toolStripSeparator13
             // 
@@ -931,6 +934,7 @@
             toolStripButton15.Name = "toolStripButton15";
             toolStripButton15.Size = new Size(82, 37);
             toolStripButton15.Text = "Ajouter";
+            toolStripButton15.Click += toolStripButton15_Click;
             // 
             // toolStripButton16
             // 
@@ -939,27 +943,32 @@
             toolStripButton16.Name = "toolStripButton16";
             toolStripButton16.Size = new Size(102, 37);
             toolStripButton16.Text = "Supprimer";
+            toolStripButton16.Click += toolStripButton16_Click;
             // 
-            // toolStripButton17
+            // modifierCommande
             // 
-            toolStripButton17.Image = Properties.Resources.modify;
-            toolStripButton17.ImageTransparentColor = Color.Magenta;
-            toolStripButton17.Name = "toolStripButton17";
-            toolStripButton17.Size = new Size(90, 37);
-            toolStripButton17.Text = "Modifier";
+            modifierCommande.Image = Properties.Resources.modify;
+            modifierCommande.ImageTransparentColor = Color.Magenta;
+            modifierCommande.Name = "modifierCommande";
+            modifierCommande.Size = new Size(90, 37);
+            modifierCommande.Text = "Modifier";
+            modifierCommande.Visible = false;
             // 
-            // dataGridView4
+            // dataCommandes
             // 
-            dataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView4.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView4.Dock = DockStyle.Fill;
-            dataGridView4.Location = new Point(3, 43);
-            dataGridView4.Name = "dataGridView4";
-            dataGridView4.RowHeadersWidth = 51;
-            dataGridView4.RowTemplate.Height = 29;
-            dataGridView4.Size = new Size(880, 459);
-            dataGridView4.TabIndex = 2;
+            dataCommandes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataCommandes.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataCommandes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataCommandes.Dock = DockStyle.Fill;
+            dataCommandes.Location = new Point(3, 43);
+            dataCommandes.Name = "dataCommandes";
+            dataCommandes.RowHeadersWidth = 51;
+            dataCommandes.RowTemplate.Height = 29;
+            dataCommandes.Size = new Size(880, 459);
+            dataCommandes.TabIndex = 2;
+            dataCommandes.CellBeginEdit += DataCommande_CellBeginEdit;
+            dataCommandes.CellValueChanged += DataCommande_CellValueChanged;
+            dataCommandes.DataError += DataCommande_DataError;
             // 
             // PageClient
             // 
@@ -976,6 +985,7 @@
             // 
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel3.Controls.Add(dataClients, 0, 1);
             tableLayoutPanel3.Controls.Add(toolStrip2, 0, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 3);
@@ -986,12 +996,28 @@
             tableLayoutPanel3.Size = new Size(886, 505);
             tableLayoutPanel3.TabIndex = 1;
             // 
+            // dataClients
+            // 
+            dataClients.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataClients.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataClients.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataClients.Dock = DockStyle.Fill;
+            dataClients.Location = new Point(3, 43);
+            dataClients.Name = "dataClients";
+            dataClients.RowHeadersWidth = 51;
+            dataClients.RowTemplate.Height = 29;
+            dataClients.Size = new Size(880, 459);
+            dataClients.TabIndex = 3;
+            dataClients.CellBeginEdit += DataClients_CellBeginEdit;
+            dataClients.CellValueChanged += DataClients_CellValueChanged;
+            dataClients.DataError += DataClients_DataError;
+            // 
             // toolStrip2
             // 
             toolStrip2.BackColor = Color.WhiteSmoke;
             toolStrip2.Dock = DockStyle.Fill;
             toolStrip2.ImageScalingSize = new Size(20, 20);
-            toolStrip2.Items.AddRange(new ToolStripItem[] { toolStripLabel3, toolStripComboBox3, toolStripSeparator3, toolStripLabel4, toolStripLabel6, toolStripComboBox4, toolStripSeparator4, toolStripLabel31, toolStripButton4, toolStripButton5, toolStripButton6 });
+            toolStrip2.Items.AddRange(new ToolStripItem[] { toolStripLabel3, toolStripComboBox3, toolStripSeparator3, toolStripLabel6, toolStripLabel31, toolStripButton4, toolStripButton5, modifierClient });
             toolStrip2.Location = new Point(0, 0);
             toolStrip2.Name = "toolStrip2";
             toolStrip2.RenderMode = ToolStripRenderMode.System;
@@ -1004,42 +1030,25 @@
             // 
             toolStripLabel3.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripLabel3.Name = "toolStripLabel3";
-            toolStripLabel3.Size = new Size(87, 37);
-            toolStripLabel3.Text = "Magasin :";
+            toolStripLabel3.Size = new Size(158, 37);
+            toolStripLabel3.Text = "Niveau de fidelité";
             // 
             // toolStripComboBox3
             // 
             toolStripComboBox3.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripComboBox3.Name = "toolStripComboBox3";
             toolStripComboBox3.Size = new Size(140, 40);
+            toolStripComboBox3.SelectedIndexChanged += toolStripComboBox3_SelectedIndexChanged;
             // 
             // toolStripSeparator3
             // 
             toolStripSeparator3.Name = "toolStripSeparator3";
             toolStripSeparator3.Size = new Size(6, 40);
             // 
-            // toolStripLabel4
-            // 
-            toolStripLabel4.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripLabel4.Name = "toolStripLabel4";
-            toolStripLabel4.Size = new Size(82, 37);
-            toolStripLabel4.Text = "Produit :";
-            // 
             // toolStripLabel6
             // 
             toolStripLabel6.Name = "toolStripLabel6";
             toolStripLabel6.Size = new Size(0, 37);
-            // 
-            // toolStripComboBox4
-            // 
-            toolStripComboBox4.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripComboBox4.Name = "toolStripComboBox4";
-            toolStripComboBox4.Size = new Size(154, 40);
-            // 
-            // toolStripSeparator4
-            // 
-            toolStripSeparator4.Name = "toolStripSeparator4";
-            toolStripSeparator4.Size = new Size(6, 40);
             // 
             // toolStripLabel31
             // 
@@ -1055,6 +1064,7 @@
             toolStripButton4.Name = "toolStripButton4";
             toolStripButton4.Size = new Size(82, 37);
             toolStripButton4.Text = "Ajouter";
+            toolStripButton4.Click += toolStripButton4_Click;
             // 
             // toolStripButton5
             // 
@@ -1063,255 +1073,27 @@
             toolStripButton5.Name = "toolStripButton5";
             toolStripButton5.Size = new Size(102, 37);
             toolStripButton5.Text = "Supprimer";
+            toolStripButton5.Click += toolStripButton5_Click;
             // 
-            // toolStripButton6
+            // modifierClient
             // 
-            toolStripButton6.Image = Properties.Resources.modify;
-            toolStripButton6.ImageTransparentColor = Color.Magenta;
-            toolStripButton6.Name = "toolStripButton6";
-            toolStripButton6.Size = new Size(90, 37);
-            toolStripButton6.Text = "Modifier";
+            modifierClient.Image = Properties.Resources.modify;
+            modifierClient.ImageTransparentColor = Color.Magenta;
+            modifierClient.Name = "modifierClient";
+            modifierClient.Size = new Size(90, 37);
+            modifierClient.Text = "Modifier";
+            modifierClient.Visible = false;
             // 
-            // PageBoutique
+            // pageStock
             // 
-            PageBoutique.BackColor = Color.FromArgb(163, 212, 255);
-            PageBoutique.Controls.Add(Boutiques);
-            PageBoutique.Location = new Point(4, 35);
-            PageBoutique.Name = "PageBoutique";
-            PageBoutique.Padding = new Padding(3);
-            PageBoutique.Size = new Size(892, 511);
-            PageBoutique.TabIndex = 1;
-            PageBoutique.Text = "Boutiques";
-            // 
-            // Boutiques
-            // 
-            Boutiques.AutoSize = true;
-            Boutiques.ColumnCount = 1;
-            Boutiques.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            Boutiques.Controls.Add(toolStrip10, 0, 0);
-            Boutiques.Controls.Add(toolStrip9, 0, 1);
-            Boutiques.Controls.Add(DataBoutique, 0, 1);
-            Boutiques.Dock = DockStyle.Fill;
-            Boutiques.Location = new Point(3, 3);
-            Boutiques.Name = "Boutiques";
-            Boutiques.RowCount = 2;
-            Boutiques.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090908F));
-            Boutiques.RowStyles.Add(new RowStyle(SizeType.Percent, 90.9090958F));
-            Boutiques.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            Boutiques.Size = new Size(886, 505);
-            Boutiques.TabIndex = 0;
-            // 
-            // toolStrip10
-            // 
-            toolStrip10.BackColor = Color.WhiteSmoke;
-            toolStrip10.Dock = DockStyle.Fill;
-            toolStrip10.ImageScalingSize = new Size(20, 20);
-            toolStrip10.Items.AddRange(new ToolStripItem[] { toolStripLabel38, toolStripLabel39, toolStripButton26, toolStripButton27, toolStripButton28 });
-            toolStrip10.Location = new Point(0, 0);
-            toolStrip10.Name = "toolStrip10";
-            toolStrip10.RenderMode = ToolStripRenderMode.System;
-            toolStrip10.Size = new Size(886, 44);
-            toolStrip10.Stretch = true;
-            toolStrip10.TabIndex = 3;
-            toolStrip10.Text = "toolStrip10";
-            // 
-            // toolStripLabel38
-            // 
-            toolStripLabel38.Name = "toolStripLabel38";
-            toolStripLabel38.Size = new Size(0, 41);
-            // 
-            // toolStripLabel39
-            // 
-            toolStripLabel39.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripLabel39.Name = "toolStripLabel39";
-            toolStripLabel39.Size = new Size(67, 41);
-            toolStripLabel39.Text = "Outils :";
-            // 
-            // toolStripButton26
-            // 
-            toolStripButton26.Image = Properties.Resources.add;
-            toolStripButton26.ImageTransparentColor = Color.Magenta;
-            toolStripButton26.Name = "toolStripButton26";
-            toolStripButton26.Size = new Size(82, 41);
-            toolStripButton26.Text = "Ajouter";
-            toolStripButton26.Click += toolStripButton26_Click;
-            // 
-            // toolStripButton27
-            // 
-            toolStripButton27.Image = Properties.Resources.delete1;
-            toolStripButton27.ImageTransparentColor = Color.Magenta;
-            toolStripButton27.Name = "toolStripButton27";
-            toolStripButton27.Size = new Size(102, 41);
-            toolStripButton27.Text = "Supprimer";
-            // 
-            // toolStripButton28
-            // 
-            toolStripButton28.Image = Properties.Resources.modify;
-            toolStripButton28.ImageTransparentColor = Color.Magenta;
-            toolStripButton28.Name = "toolStripButton28";
-            toolStripButton28.RightToLeft = RightToLeft.No;
-            toolStripButton28.Size = new Size(90, 41);
-            toolStripButton28.Text = "Modifier";
-            toolStripButton28.Visible = false;
-            // 
-            // toolStrip9
-            // 
-            toolStrip9.BackColor = Color.WhiteSmoke;
-            toolStrip9.Dock = DockStyle.Fill;
-            toolStrip9.ImageScalingSize = new Size(20, 20);
-            toolStrip9.Items.AddRange(new ToolStripItem[] { toolStripLabel32, toolStripComboBox18, toolStripSeparator18, toolStripLabel33, toolStripLabel34, toolStripComboBox19, toolStripSeparator19, toolStripLabel35, toolStripButton1, toolStripButton24, toolStripButton25 });
-            toolStrip9.Location = new Point(0, 484);
-            toolStrip9.Name = "toolStrip9";
-            toolStrip9.RenderMode = ToolStripRenderMode.System;
-            toolStrip9.Size = new Size(886, 21);
-            toolStrip9.Stretch = true;
-            toolStrip9.TabIndex = 2;
-            toolStrip9.Text = "toolStrip9";
-            // 
-            // toolStripLabel32
-            // 
-            toolStripLabel32.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripLabel32.Name = "toolStripLabel32";
-            toolStripLabel32.Size = new Size(87, 18);
-            toolStripLabel32.Text = "Magasin :";
-            // 
-            // toolStripComboBox18
-            // 
-            toolStripComboBox18.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripComboBox18.Name = "toolStripComboBox18";
-            toolStripComboBox18.Size = new Size(140, 21);
-            // 
-            // toolStripSeparator18
-            // 
-            toolStripSeparator18.Name = "toolStripSeparator18";
-            toolStripSeparator18.Size = new Size(6, 21);
-            // 
-            // toolStripLabel33
-            // 
-            toolStripLabel33.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripLabel33.Name = "toolStripLabel33";
-            toolStripLabel33.Size = new Size(82, 18);
-            toolStripLabel33.Text = "Produit :";
-            // 
-            // toolStripLabel34
-            // 
-            toolStripLabel34.Name = "toolStripLabel34";
-            toolStripLabel34.Size = new Size(0, 18);
-            // 
-            // toolStripComboBox19
-            // 
-            toolStripComboBox19.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripComboBox19.Name = "toolStripComboBox19";
-            toolStripComboBox19.Size = new Size(154, 21);
-            // 
-            // toolStripSeparator19
-            // 
-            toolStripSeparator19.Name = "toolStripSeparator19";
-            toolStripSeparator19.Size = new Size(6, 21);
-            // 
-            // toolStripLabel35
-            // 
-            toolStripLabel35.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripLabel35.Name = "toolStripLabel35";
-            toolStripLabel35.Size = new Size(67, 18);
-            toolStripLabel35.Text = "Outils :";
-            // 
-            // toolStripButton1
-            // 
-            toolStripButton1.Image = Properties.Resources.add;
-            toolStripButton1.ImageTransparentColor = Color.Magenta;
-            toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(82, 18);
-            toolStripButton1.Text = "Ajouter";
-            // 
-            // toolStripButton24
-            // 
-            toolStripButton24.Image = Properties.Resources.delete1;
-            toolStripButton24.ImageTransparentColor = Color.Magenta;
-            toolStripButton24.Name = "toolStripButton24";
-            toolStripButton24.Size = new Size(102, 18);
-            toolStripButton24.Text = "Supprimer";
-            // 
-            // toolStripButton25
-            // 
-            toolStripButton25.Image = Properties.Resources.modify;
-            toolStripButton25.ImageTransparentColor = Color.Magenta;
-            toolStripButton25.Name = "toolStripButton25";
-            toolStripButton25.RightToLeft = RightToLeft.No;
-            toolStripButton25.Size = new Size(90, 18);
-            toolStripButton25.Text = "Modifier";
-            toolStripButton25.Visible = false;
-            // 
-            // DataBoutique
-            // 
-            DataBoutique.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            DataBoutique.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            DataBoutique.BackgroundColor = Color.FromArgb(163, 212, 255);
-            DataBoutique.ColumnHeadersHeight = 29;
-            DataBoutique.Dock = DockStyle.Fill;
-            DataBoutique.Location = new Point(0, 44);
-            DataBoutique.Margin = new Padding(0);
-            DataBoutique.MinimumSize = new Size(800, 500);
-            DataBoutique.Name = "DataBoutique";
-            DataBoutique.RowHeadersWidth = 51;
-            DataBoutique.RowTemplate.Height = 29;
-            DataBoutique.ScrollBars = ScrollBars.None;
-            DataBoutique.Size = new Size(886, 500);
-            DataBoutique.TabIndex = 0;
-            // 
-            // Accueil
-            // 
-            Accueil.BackColor = Color.FromArgb(163, 212, 255);
-            Accueil.Controls.Add(tableLayoutPanel1);
-            Accueil.Location = new Point(4, 35);
-            Accueil.Name = "Accueil";
-            Accueil.Padding = new Padding(3);
-            Accueil.Size = new Size(892, 511);
-            Accueil.TabIndex = 0;
-            Accueil.Text = "Accueil";
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(3, 3);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(886, 505);
-            tableLayoutPanel1.TabIndex = 0;
-            // 
-            // Admin
-            // 
-            Admin.Controls.Add(Accueil);
-            Admin.Controls.Add(PageBoutique);
-            Admin.Controls.Add(PageProduits);
-            Admin.Controls.Add(PageClient);
-            Admin.Controls.Add(tabPage1);
-            Admin.Controls.Add(tabPage2);
-            Admin.Controls.Add(tabPage3);
-            Admin.Dock = DockStyle.Fill;
-            Admin.Font = new Font("Berlin Sans FB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            Admin.Location = new Point(0, 0);
-            Admin.Name = "Admin";
-            Admin.SelectedIndex = 0;
-            Admin.Size = new Size(900, 550);
-            Admin.TabIndex = 0;
-            // 
-            // PageProduits
-            // 
-            PageProduits.BackColor = Color.FromArgb(163, 212, 255);
-            PageProduits.Controls.Add(tableLayoutPanel2);
-            PageProduits.Location = new Point(4, 35);
-            PageProduits.Name = "PageProduits";
-            PageProduits.Padding = new Padding(3);
-            PageProduits.Size = new Size(892, 511);
-            PageProduits.TabIndex = 2;
-            PageProduits.Text = "Stock";
+            pageStock.BackColor = Color.FromArgb(163, 212, 255);
+            pageStock.Controls.Add(tableLayoutPanel2);
+            pageStock.Location = new Point(4, 35);
+            pageStock.Name = "pageStock";
+            pageStock.Padding = new Padding(3);
+            pageStock.Size = new Size(892, 511);
+            pageStock.TabIndex = 2;
+            pageStock.Text = "Stock";
             // 
             // tableLayoutPanel2
             // 
@@ -1424,6 +1206,7 @@
             // 
             DataStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DataStock.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            DataStock.BackgroundColor = Color.FromArgb(163, 212, 255);
             DataStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataStock.Dock = DockStyle.Fill;
             DataStock.Location = new Point(3, 43);
@@ -1436,20 +1219,589 @@
             DataStock.CellValueChanged += DataStock_CellValueChanged;
             DataStock.DataError += DataStock_DataError;
             // 
+            // PageBoutique
+            // 
+            PageBoutique.BackColor = Color.FromArgb(163, 212, 255);
+            PageBoutique.Controls.Add(Boutiques);
+            PageBoutique.Location = new Point(4, 35);
+            PageBoutique.Name = "PageBoutique";
+            PageBoutique.Padding = new Padding(3);
+            PageBoutique.Size = new Size(892, 511);
+            PageBoutique.TabIndex = 1;
+            PageBoutique.Text = "Boutiques";
+            // 
+            // Boutiques
+            // 
+            Boutiques.AutoSize = true;
+            Boutiques.ColumnCount = 1;
+            Boutiques.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            Boutiques.Controls.Add(toolStripBoutique, 0, 0);
+            Boutiques.Controls.Add(DataBoutique, 0, 1);
+            Boutiques.Dock = DockStyle.Fill;
+            Boutiques.Location = new Point(3, 3);
+            Boutiques.Name = "Boutiques";
+            Boutiques.RowCount = 3;
+            Boutiques.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090908F));
+            Boutiques.RowStyles.Add(new RowStyle(SizeType.Percent, 90.9090958F));
+            Boutiques.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            Boutiques.Size = new Size(886, 505);
+            Boutiques.TabIndex = 0;
+            // 
+            // toolStripBoutique
+            // 
+            toolStripBoutique.BackColor = Color.WhiteSmoke;
+            toolStripBoutique.Dock = DockStyle.Fill;
+            toolStripBoutique.ImageScalingSize = new Size(20, 20);
+            toolStripBoutique.Items.AddRange(new ToolStripItem[] { toolStripLabel38, toolStripLabel39, ajouterBoutique, toolStripButton27, modifierBoutique });
+            toolStripBoutique.Location = new Point(0, 0);
+            toolStripBoutique.Name = "toolStripBoutique";
+            toolStripBoutique.RenderMode = ToolStripRenderMode.System;
+            toolStripBoutique.Size = new Size(886, 44);
+            toolStripBoutique.Stretch = true;
+            toolStripBoutique.TabIndex = 3;
+            toolStripBoutique.Text = "toolStrip10";
+            // 
+            // toolStripLabel38
+            // 
+            toolStripLabel38.Name = "toolStripLabel38";
+            toolStripLabel38.Size = new Size(0, 41);
+            // 
+            // toolStripLabel39
+            // 
+            toolStripLabel39.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripLabel39.Name = "toolStripLabel39";
+            toolStripLabel39.Size = new Size(67, 41);
+            toolStripLabel39.Text = "Outils :";
+            // 
+            // ajouterBoutique
+            // 
+            ajouterBoutique.Image = Properties.Resources.add;
+            ajouterBoutique.ImageTransparentColor = Color.Magenta;
+            ajouterBoutique.Name = "ajouterBoutique";
+            ajouterBoutique.Size = new Size(82, 41);
+            ajouterBoutique.Text = "Ajouter";
+            ajouterBoutique.Click += toolStripButton26_Click;
+            // 
+            // toolStripButton27
+            // 
+            toolStripButton27.Image = Properties.Resources.delete1;
+            toolStripButton27.ImageTransparentColor = Color.Magenta;
+            toolStripButton27.Name = "toolStripButton27";
+            toolStripButton27.Size = new Size(102, 41);
+            toolStripButton27.Text = "Supprimer";
+            toolStripButton27.Click += toolStripButton27_Click;
+            // 
+            // modifierBoutique
+            // 
+            modifierBoutique.Image = Properties.Resources.modify;
+            modifierBoutique.ImageTransparentColor = Color.Magenta;
+            modifierBoutique.Name = "modifierBoutique";
+            modifierBoutique.RightToLeft = RightToLeft.No;
+            modifierBoutique.Size = new Size(90, 41);
+            modifierBoutique.Text = "Modifier";
+            modifierBoutique.Visible = false;
+            // 
+            // DataBoutique
+            // 
+            DataBoutique.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DataBoutique.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            DataBoutique.BackgroundColor = Color.FromArgb(163, 212, 255);
+            DataBoutique.ColumnHeadersHeight = 29;
+            DataBoutique.Dock = DockStyle.Fill;
+            DataBoutique.Location = new Point(0, 44);
+            DataBoutique.Margin = new Padding(0);
+            DataBoutique.MinimumSize = new Size(800, 500);
+            DataBoutique.Name = "DataBoutique";
+            DataBoutique.RowHeadersWidth = 51;
+            DataBoutique.RowTemplate.Height = 29;
+            DataBoutique.ScrollBars = ScrollBars.None;
+            DataBoutique.Size = new Size(886, 500);
+            DataBoutique.TabIndex = 0;
+            DataBoutique.CellBeginEdit += DataBoutique_CellBeginEdit;
+            DataBoutique.CellValueChanged += DataBoutique_CellValueChanged;
+            DataBoutique.DataError += DataBoutique_DataError;
+            // 
+            // Accueil
+            // 
+            Accueil.BackColor = Color.FromArgb(163, 212, 255);
+            Accueil.Controls.Add(tableLayoutPanel1);
+            Accueil.Location = new Point(4, 35);
+            Accueil.Name = "Accueil";
+            Accueil.Padding = new Padding(3);
+            Accueil.Size = new Size(892, 511);
+            Accueil.TabIndex = 0;
+            Accueil.Text = "Accueil";
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(3, 3);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 3;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.Size = new Size(886, 505);
+            tableLayoutPanel1.TabIndex = 0;
+            // 
+            // pageAdmin
+            // 
+            pageAdmin.Controls.Add(Accueil);
+            pageAdmin.Controls.Add(PageBoutique);
+            pageAdmin.Controls.Add(pageProduits);
+            pageAdmin.Controls.Add(pageStock);
+            pageAdmin.Controls.Add(PageClient);
+            pageAdmin.Controls.Add(pageCommandes);
+            pageAdmin.Controls.Add(pageBouquetsStandards);
+            pageAdmin.Controls.Add(pageBouquetPerso);
+            pageAdmin.Controls.Add(pageEtat);
+            pageAdmin.Dock = DockStyle.Fill;
+            pageAdmin.Font = new Font("Berlin Sans FB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            pageAdmin.Location = new Point(0, 0);
+            pageAdmin.Name = "pageAdmin";
+            pageAdmin.SelectedIndex = 0;
+            pageAdmin.Size = new Size(900, 550);
+            pageAdmin.TabIndex = 0;
+            // 
+            // pageBouquetPerso
+            // 
+            pageBouquetPerso.BackColor = Color.FromArgb(163, 212, 255);
+            pageBouquetPerso.Controls.Add(tableLayoutPanel11);
+            pageBouquetPerso.Location = new Point(4, 35);
+            pageBouquetPerso.Name = "pageBouquetPerso";
+            pageBouquetPerso.Padding = new Padding(3);
+            pageBouquetPerso.Size = new Size(892, 511);
+            pageBouquetPerso.TabIndex = 7;
+            pageBouquetPerso.Text = "Bouquets personnalisés";
+            // 
+            // tableLayoutPanel11
+            // 
+            tableLayoutPanel11.ColumnCount = 1;
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel11.Controls.Add(toolStrip11, 0, 0);
+            tableLayoutPanel11.Controls.Add(dataBouquetPerso, 0, 1);
+            tableLayoutPanel11.Dock = DockStyle.Fill;
+            tableLayoutPanel11.Location = new Point(3, 3);
+            tableLayoutPanel11.Name = "tableLayoutPanel11";
+            tableLayoutPanel11.RowCount = 2;
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 92F));
+            tableLayoutPanel11.Size = new Size(886, 505);
+            tableLayoutPanel11.TabIndex = 2;
+            // 
+            // toolStrip11
+            // 
+            toolStrip11.BackColor = Color.WhiteSmoke;
+            toolStrip11.Dock = DockStyle.Fill;
+            toolStrip11.ImageScalingSize = new Size(20, 20);
+            toolStrip11.Items.AddRange(new ToolStripItem[] { toolStripLabel40, toolStripLabel41, toolStripButton17, toolStripButton30, toolStripButton31 });
+            toolStrip11.Location = new Point(0, 0);
+            toolStrip11.Name = "toolStrip11";
+            toolStrip11.RenderMode = ToolStripRenderMode.System;
+            toolStrip11.Size = new Size(886, 40);
+            toolStrip11.Stretch = true;
+            toolStrip11.TabIndex = 1;
+            toolStrip11.Text = "toolStrip11";
+            // 
+            // toolStripLabel40
+            // 
+            toolStripLabel40.Name = "toolStripLabel40";
+            toolStripLabel40.Size = new Size(0, 37);
+            // 
+            // toolStripLabel41
+            // 
+            toolStripLabel41.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripLabel41.Name = "toolStripLabel41";
+            toolStripLabel41.Size = new Size(67, 37);
+            toolStripLabel41.Text = "Outils :";
+            // 
+            // toolStripButton17
+            // 
+            toolStripButton17.Image = Properties.Resources.add;
+            toolStripButton17.ImageTransparentColor = Color.Magenta;
+            toolStripButton17.Name = "toolStripButton17";
+            toolStripButton17.Size = new Size(82, 37);
+            toolStripButton17.Text = "Ajouter";
+            toolStripButton17.Click += toolStripButton17_Click;
+            // 
+            // toolStripButton30
+            // 
+            toolStripButton30.Image = Properties.Resources.delete1;
+            toolStripButton30.ImageTransparentColor = Color.Magenta;
+            toolStripButton30.Name = "toolStripButton30";
+            toolStripButton30.Size = new Size(102, 37);
+            toolStripButton30.Text = "Supprimer";
+            toolStripButton30.Click += toolStripButton30_Click;
+            // 
+            // toolStripButton31
+            // 
+            toolStripButton31.Image = Properties.Resources.modify;
+            toolStripButton31.ImageTransparentColor = Color.Magenta;
+            toolStripButton31.Name = "toolStripButton31";
+            toolStripButton31.Size = new Size(90, 37);
+            toolStripButton31.Text = "Modifier";
+            toolStripButton31.Visible = false;
+            // 
+            // dataBouquetPerso
+            // 
+            dataBouquetPerso.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataBouquetPerso.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataBouquetPerso.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataBouquetPerso.Dock = DockStyle.Fill;
+            dataBouquetPerso.Location = new Point(3, 43);
+            dataBouquetPerso.Name = "dataBouquetPerso";
+            dataBouquetPerso.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataBouquetPerso.RowTemplate.Height = 29;
+            dataBouquetPerso.Size = new Size(880, 459);
+            dataBouquetPerso.TabIndex = 2;
+            dataBouquetPerso.CellBeginEdit += dataBouquetPerso_CellBeginEdit;
+            // 
+            // pageEtat
+            // 
+            pageEtat.BackColor = Color.FromArgb(163, 212, 255);
+            pageEtat.Controls.Add(Etat);
+            pageEtat.Location = new Point(4, 35);
+            pageEtat.Name = "pageEtat";
+            pageEtat.Padding = new Padding(3);
+            pageEtat.Size = new Size(892, 511);
+            pageEtat.TabIndex = 8;
+            pageEtat.Text = "Etat";
+            // 
+            // Etat
+            // 
+            Etat.AutoSize = true;
+            Etat.ColumnCount = 1;
+            Etat.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            Etat.Controls.Add(toolStrip10, 0, 0);
+            Etat.Controls.Add(dataEtat, 0, 1);
+            Etat.Dock = DockStyle.Fill;
+            Etat.Location = new Point(3, 3);
+            Etat.Name = "Etat";
+            Etat.RowCount = 3;
+            Etat.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090908F));
+            Etat.RowStyles.Add(new RowStyle(SizeType.Percent, 90.9090958F));
+            Etat.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            Etat.Size = new Size(886, 505);
+            Etat.TabIndex = 1;
+            // 
+            // toolStrip10
+            // 
+            toolStrip10.BackColor = Color.WhiteSmoke;
+            toolStrip10.Dock = DockStyle.Fill;
+            toolStrip10.ImageScalingSize = new Size(20, 20);
+            toolStrip10.Items.AddRange(new ToolStripItem[] { toolStripLabel35, toolStripLabel36, toolStripButton26, toolStripButton28, toolStripButton29 });
+            toolStrip10.Location = new Point(0, 0);
+            toolStrip10.Name = "toolStrip10";
+            toolStrip10.RenderMode = ToolStripRenderMode.System;
+            toolStrip10.Size = new Size(886, 44);
+            toolStrip10.Stretch = true;
+            toolStrip10.TabIndex = 3;
+            toolStrip10.Text = "toolStrip10";
+            // 
+            // toolStripLabel35
+            // 
+            toolStripLabel35.Name = "toolStripLabel35";
+            toolStripLabel35.Size = new Size(0, 41);
+            // 
+            // toolStripLabel36
+            // 
+            toolStripLabel36.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripLabel36.Name = "toolStripLabel36";
+            toolStripLabel36.Size = new Size(67, 41);
+            toolStripLabel36.Text = "Outils :";
+            toolStripLabel36.Visible = false;
+            // 
+            // toolStripButton26
+            // 
+            toolStripButton26.Image = Properties.Resources.add;
+            toolStripButton26.ImageTransparentColor = Color.Magenta;
+            toolStripButton26.Name = "toolStripButton26";
+            toolStripButton26.Size = new Size(82, 41);
+            toolStripButton26.Text = "Ajouter";
+            toolStripButton26.Visible = false;
+            // 
+            // toolStripButton28
+            // 
+            toolStripButton28.Image = Properties.Resources.delete1;
+            toolStripButton28.ImageTransparentColor = Color.Magenta;
+            toolStripButton28.Name = "toolStripButton28";
+            toolStripButton28.Size = new Size(102, 41);
+            toolStripButton28.Text = "Supprimer";
+            toolStripButton28.Visible = false;
+            // 
+            // toolStripButton29
+            // 
+            toolStripButton29.Image = Properties.Resources.modify;
+            toolStripButton29.ImageTransparentColor = Color.Magenta;
+            toolStripButton29.Name = "toolStripButton29";
+            toolStripButton29.RightToLeft = RightToLeft.No;
+            toolStripButton29.Size = new Size(90, 41);
+            toolStripButton29.Text = "Modifier";
+            toolStripButton29.Visible = false;
+            // 
+            // dataEtat
+            // 
+            dataEtat.AllowUserToDeleteRows = false;
+            dataEtat.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataEtat.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataEtat.BackgroundColor = Color.FromArgb(163, 212, 255);
+            dataEtat.ColumnHeadersHeight = 29;
+            dataEtat.Dock = DockStyle.Fill;
+            dataEtat.Location = new Point(0, 44);
+            dataEtat.Margin = new Padding(0);
+            dataEtat.MinimumSize = new Size(800, 500);
+            dataEtat.Name = "dataEtat";
+            dataEtat.RowHeadersWidth = 51;
+            dataEtat.RowTemplate.Height = 29;
+            dataEtat.ScrollBars = ScrollBars.None;
+            dataEtat.Size = new Size(886, 500);
+            dataEtat.TabIndex = 0;
+            dataEtat.CellBeginEdit += dataEtat_CellBeginEdit;
+            // 
+            // toolStrip6
+            // 
+            toolStrip6.BackColor = Color.WhiteSmoke;
+            toolStrip6.Dock = DockStyle.Fill;
+            toolStrip6.ImageScalingSize = new Size(20, 20);
+            toolStrip6.Items.AddRange(new ToolStripItem[] { toolStripLabel4, toolStripComboBox4, toolStripSeparator4, toolStripLabel24, toolStripLabel27, toolStripComboBox15, toolStripSeparator15, toolStripLabel32, toolStripButton1, toolStripButton6, toolStripButton20 });
+            toolStrip6.Location = new Point(0, 0);
+            toolStrip6.Name = "toolStrip6";
+            toolStrip6.RenderMode = ToolStripRenderMode.System;
+            toolStrip6.Size = new Size(200, 35);
+            toolStrip6.Stretch = true;
+            toolStrip6.TabIndex = 1;
+            toolStrip6.Text = "toolStrip6";
+            // 
+            // toolStripLabel4
+            // 
+            toolStripLabel4.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripLabel4.Name = "toolStripLabel4";
+            toolStripLabel4.Size = new Size(87, 32);
+            toolStripLabel4.Text = "Magasin :";
+            // 
+            // toolStripComboBox4
+            // 
+            toolStripComboBox4.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripComboBox4.Name = "toolStripComboBox4";
+            toolStripComboBox4.Size = new Size(140, 31);
+            toolStripComboBox4.SelectedIndexChanged += toolStripComboBox12_SelectedIndexChanged;
+            // 
+            // toolStripSeparator4
+            // 
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new Size(6, 40);
+            // 
+            // toolStripLabel24
+            // 
+            toolStripLabel24.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripLabel24.Name = "toolStripLabel24";
+            toolStripLabel24.Size = new Size(103, 23);
+            toolStripLabel24.Text = "Code état :";
+            // 
+            // toolStripLabel27
+            // 
+            toolStripLabel27.Name = "toolStripLabel27";
+            toolStripLabel27.Size = new Size(0, 0);
+            // 
+            // toolStripComboBox15
+            // 
+            toolStripComboBox15.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripComboBox15.Name = "toolStripComboBox15";
+            toolStripComboBox15.Size = new Size(154, 31);
+            toolStripComboBox15.SelectedIndexChanged += toolStripComboBox13_SelectedIndexChanged;
+            // 
+            // toolStripSeparator15
+            // 
+            toolStripSeparator15.Name = "toolStripSeparator15";
+            toolStripSeparator15.Size = new Size(6, 40);
+            // 
+            // toolStripLabel32
+            // 
+            toolStripLabel32.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripLabel32.Name = "toolStripLabel32";
+            toolStripLabel32.Size = new Size(67, 23);
+            toolStripLabel32.Text = "Outils :";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.Image = Properties.Resources.add;
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(82, 24);
+            toolStripButton1.Text = "Ajouter";
+            // 
+            // toolStripButton6
+            // 
+            toolStripButton6.Image = Properties.Resources.delete1;
+            toolStripButton6.ImageTransparentColor = Color.Magenta;
+            toolStripButton6.Name = "toolStripButton6";
+            toolStripButton6.Size = new Size(102, 24);
+            toolStripButton6.Text = "Supprimer";
+            // 
+            // toolStripButton20
+            // 
+            toolStripButton20.Image = Properties.Resources.modify;
+            toolStripButton20.ImageTransparentColor = Color.Magenta;
+            toolStripButton20.Name = "toolStripButton20";
+            toolStripButton20.Size = new Size(90, 24);
+            toolStripButton20.Text = "Modifier";
+            toolStripButton20.Visible = false;
+            // 
+            // dataGridView4
+            // 
+            dataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView4.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView4.Dock = DockStyle.Fill;
+            dataGridView4.Location = new Point(3, 38);
+            dataGridView4.Name = "dataGridView4";
+            dataGridView4.RowHeadersWidth = 51;
+            dataGridView4.RowTemplate.Height = 29;
+            dataGridView4.Size = new Size(194, 459);
+            dataGridView4.TabIndex = 2;
+            dataGridView4.CellBeginEdit += DataCommande_CellBeginEdit;
+            dataGridView4.CellValueChanged += DataCommande_CellValueChanged;
+            dataGridView4.DataError += DataCommande_DataError;
+            // 
+            // tableLayoutPanel10
+            // 
+            tableLayoutPanel10.ColumnCount = 1;
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel10.Controls.Add(toolStrip6, 0, 0);
+            tableLayoutPanel10.Dock = DockStyle.Fill;
+            tableLayoutPanel10.Location = new Point(0, 0);
+            tableLayoutPanel10.Name = "tableLayoutPanel10";
+            tableLayoutPanel10.RowCount = 2;
+            tableLayoutPanel10.Size = new Size(200, 100);
+            tableLayoutPanel10.TabIndex = 0;
+            // 
+            // dataGridView5
+            // 
+            dataGridView5.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView5.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView5.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView5.Dock = DockStyle.Fill;
+            dataGridView5.Location = new Point(3, 3);
+            dataGridView5.Name = "dataGridView5";
+            dataGridView5.RowHeadersWidth = 51;
+            dataGridView5.RowTemplate.Height = 29;
+            dataGridView5.Size = new Size(194, 459);
+            dataGridView5.TabIndex = 2;
+            // 
+            // tableLayoutPanel12
+            // 
+            tableLayoutPanel12.ColumnCount = 1;
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel12.Dock = DockStyle.Fill;
+            tableLayoutPanel12.Location = new Point(0, 0);
+            tableLayoutPanel12.Name = "tableLayoutPanel12";
+            tableLayoutPanel12.RowCount = 2;
+            tableLayoutPanel12.Size = new Size(200, 100);
+            tableLayoutPanel12.TabIndex = 0;
+            // 
+            // toolStrip9
+            // 
+            toolStrip9.BackColor = Color.WhiteSmoke;
+            toolStrip9.Dock = DockStyle.Fill;
+            toolStrip9.ImageScalingSize = new Size(20, 20);
+            toolStrip9.Items.AddRange(new ToolStripItem[] { toolStripLabel33, toolStripLabel34, toolStripButton23, toolStripButton24, toolStripButton25 });
+            toolStrip9.Location = new Point(0, 0);
+            toolStrip9.Name = "toolStrip9";
+            toolStrip9.RenderMode = ToolStripRenderMode.System;
+            toolStrip9.Size = new Size(200, 27);
+            toolStrip9.Stretch = true;
+            toolStrip9.TabIndex = 3;
+            toolStrip9.Text = "toolStrip10";
+            // 
+            // toolStripLabel33
+            // 
+            toolStripLabel33.Name = "toolStripLabel33";
+            toolStripLabel33.Size = new Size(0, 24);
+            // 
+            // toolStripLabel34
+            // 
+            toolStripLabel34.Font = new Font("Berlin Sans FB", 11.8F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripLabel34.Name = "toolStripLabel34";
+            toolStripLabel34.Size = new Size(67, 24);
+            toolStripLabel34.Text = "Outils :";
+            // 
+            // toolStripButton23
+            // 
+            toolStripButton23.Image = Properties.Resources.add;
+            toolStripButton23.ImageTransparentColor = Color.Magenta;
+            toolStripButton23.Name = "toolStripButton23";
+            toolStripButton23.Size = new Size(82, 24);
+            toolStripButton23.Text = "Ajouter";
+            toolStripButton23.Click += toolStripButton26_Click;
+            // 
+            // toolStripButton24
+            // 
+            toolStripButton24.Image = Properties.Resources.delete1;
+            toolStripButton24.ImageTransparentColor = Color.Magenta;
+            toolStripButton24.Name = "toolStripButton24";
+            toolStripButton24.Size = new Size(102, 24);
+            toolStripButton24.Text = "Supprimer";
+            toolStripButton24.Click += toolStripButton27_Click;
+            // 
+            // toolStripButton25
+            // 
+            toolStripButton25.Image = Properties.Resources.modify;
+            toolStripButton25.ImageTransparentColor = Color.Magenta;
+            toolStripButton25.Name = "toolStripButton25";
+            toolStripButton25.RightToLeft = RightToLeft.No;
+            toolStripButton25.Size = new Size(90, 24);
+            toolStripButton25.Text = "Modifier";
+            toolStripButton25.Visible = false;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridView1.BackgroundColor = Color.FromArgb(163, 212, 255);
+            dataGridView1.ColumnHeadersHeight = 29;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 27);
+            dataGridView1.Margin = new Padding(0);
+            dataGridView1.MinimumSize = new Size(800, 500);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.ScrollBars = ScrollBars.None;
+            dataGridView1.Size = new Size(800, 500);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellBeginEdit += DataBoutique_CellBeginEdit;
+            dataGridView1.CellValueChanged += DataBoutique_CellValueChanged;
+            dataGridView1.DataError += DataBoutique_DataError;
+            // 
+            // tableLayoutPanel13
+            // 
+            tableLayoutPanel13.AutoSize = true;
+            tableLayoutPanel13.ColumnCount = 1;
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel13.Controls.Add(toolStrip9, 0, 0);
+            tableLayoutPanel13.Dock = DockStyle.Fill;
+            tableLayoutPanel13.Location = new Point(0, 0);
+            tableLayoutPanel13.Name = "tableLayoutPanel13";
+            tableLayoutPanel13.RowCount = 3;
+            tableLayoutPanel13.Size = new Size(200, 100);
+            tableLayoutPanel13.TabIndex = 0;
+            // 
             // InterfaceAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(190, 210, 100);
-            Controls.Add(Admin);
+            Controls.Add(pageAdmin);
             Name = "InterfaceAdmin";
             Size = new Size(900, 550);
             tableLayoutPanel4.ResumeLayout(false);
             tableLayoutPanel4.PerformLayout();
             toolStrip3.ResumeLayout(false);
             toolStrip3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel5.PerformLayout();
             toolStrip4.ResumeLayout(false);
@@ -1460,54 +1812,71 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             tableLayoutPanel6.ResumeLayout(false);
             tableLayoutPanel6.PerformLayout();
-            tabPage3.ResumeLayout(false);
+            pageProduits.ResumeLayout(false);
             tableLayoutPanel9.ResumeLayout(false);
             tableLayoutPanel9.PerformLayout();
             toolStrip8.ResumeLayout(false);
             toolStrip8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView6).EndInit();
-            tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataProduit).EndInit();
+            pageBouquetsStandards.ResumeLayout(false);
             tableLayoutPanel8.ResumeLayout(false);
             tableLayoutPanel8.PerformLayout();
             toolStrip7.ResumeLayout(false);
             toolStrip7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView5).EndInit();
-            tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataBouquetStandard).EndInit();
+            pageCommandes.ResumeLayout(false);
             tableLayoutPanel7.ResumeLayout(false);
             tableLayoutPanel7.PerformLayout();
-            toolStrip6.ResumeLayout(false);
-            toolStrip6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
+            toolStripCommande.ResumeLayout(false);
+            toolStripCommande.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataCommandes).EndInit();
             PageClient.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataClients).EndInit();
             toolStrip2.ResumeLayout(false);
             toolStrip2.PerformLayout();
-            PageBoutique.ResumeLayout(false);
-            PageBoutique.PerformLayout();
-            Boutiques.ResumeLayout(false);
-            Boutiques.PerformLayout();
-            toolStrip10.ResumeLayout(false);
-            toolStrip10.PerformLayout();
-            toolStrip9.ResumeLayout(false);
-            toolStrip9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)DataBoutique).EndInit();
-            Accueil.ResumeLayout(false);
-            Admin.ResumeLayout(false);
-            PageProduits.ResumeLayout(false);
+            pageStock.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DataStock).EndInit();
+            PageBoutique.ResumeLayout(false);
+            PageBoutique.PerformLayout();
+            Boutiques.ResumeLayout(false);
+            Boutiques.PerformLayout();
+            toolStripBoutique.ResumeLayout(false);
+            toolStripBoutique.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DataBoutique).EndInit();
+            Accueil.ResumeLayout(false);
+            pageAdmin.ResumeLayout(false);
+            pageBouquetPerso.ResumeLayout(false);
+            tableLayoutPanel11.ResumeLayout(false);
+            tableLayoutPanel11.PerformLayout();
+            toolStrip11.ResumeLayout(false);
+            toolStrip11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataBouquetPerso).EndInit();
+            pageEtat.ResumeLayout(false);
+            pageEtat.PerformLayout();
+            Etat.ResumeLayout(false);
+            Etat.PerformLayout();
+            toolStrip10.ResumeLayout(false);
+            toolStrip10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataEtat).EndInit();
+            toolStrip6.ResumeLayout(false);
+            toolStrip6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
+            tableLayoutPanel10.ResumeLayout(false);
+            tableLayoutPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView5).EndInit();
+            toolStrip9.ResumeLayout(false);
+            toolStrip9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tableLayoutPanel13.ResumeLayout(false);
+            tableLayoutPanel13.PerformLayout();
             ResumeLayout(false);
         }
-
-
-
-
-
-
 
         #endregion
         private ToolStripComboBox toolStripComboBox5;
@@ -1526,7 +1895,7 @@
         private ToolStripButton toolStripButton7;
         private ToolStripButton toolStripButton8;
         private DataGridView dataGridView1;
-        private TabPage tabPage4;
+
         private TableLayoutPanel tableLayoutPanel5;
         private ToolStrip toolStrip4;
         private ToolStripLabel toolStripLabel11;
@@ -1556,12 +1925,11 @@
         private ToolStripButton toolStripButton14;
         private DataGridView dataGridView3;
         private TableLayoutPanel tableLayoutPanel6;
-        private TabPage tabPage3;
+        private ToolStrip miniToolStrip;
+        private TabPage pageProduits;
+        private TabPage tabPage4;
         private TableLayoutPanel tableLayoutPanel9;
         private ToolStrip toolStrip8;
-        private ToolStripLabel toolStripLabel27;
-        private ToolStripComboBox toolStripComboBox16;
-        private ToolStripSeparator toolStripSeparator16;
         private ToolStripLabel toolStripLabel28;
         private ToolStripLabel toolStripLabel29;
         private ToolStripComboBox toolStripComboBox17;
@@ -1569,27 +1937,23 @@
         private ToolStripLabel toolStripLabel30;
         private ToolStripButton toolStripButton21;
         private ToolStripButton toolStripButton22;
-        private ToolStripButton toolStripButton23;
-        private DataGridView dataGridView6;
-        private ToolStrip miniToolStrip;
-        private TabPage tabPage2;
+        private ToolStripButton modifierProduit;
+        private DataGridView dataProduit;
+        private TabPage pageBouquetsStandards;
         private TableLayoutPanel tableLayoutPanel8;
         private ToolStrip toolStrip7;
         private ToolStripLabel toolStripLabel23;
         private ToolStripComboBox toolStripComboBox14;
         private ToolStripSeparator toolStripSeparator14;
-        private ToolStripLabel toolStripLabel24;
         private ToolStripLabel toolStripLabel25;
-        private ToolStripComboBox toolStripComboBox15;
-        private ToolStripSeparator toolStripSeparator15;
         private ToolStripLabel toolStripLabel26;
         private ToolStripButton toolStripButton18;
         private ToolStripButton toolStripButton19;
-        private ToolStripButton toolStripButton20;
-        private DataGridView dataGridView5;
-        private TabPage tabPage1;
+        private ToolStripButton modifierBouquetStandard;
+        private DataGridView dataBouquetStandard;
+        private TabPage pageCommandes;
         private TableLayoutPanel tableLayoutPanel7;
-        private ToolStrip toolStrip6;
+        private ToolStrip toolStripCommande;
         private ToolStripLabel toolStripLabel19;
         private ToolStripComboBox toolStripComboBox12;
         private ToolStripSeparator toolStripSeparator12;
@@ -1600,29 +1964,20 @@
         private ToolStripLabel toolStripLabel22;
         private ToolStripButton toolStripButton15;
         private ToolStripButton toolStripButton16;
-        private ToolStripButton toolStripButton17;
-        private DataGridView dataGridView4;
+        private ToolStripButton modifierCommande;
+        private DataGridView dataCommandes;
         private TabPage PageClient;
         private TableLayoutPanel tableLayoutPanel3;
         private ToolStrip toolStrip2;
         private ToolStripLabel toolStripLabel3;
         private ToolStripComboBox toolStripComboBox3;
         private ToolStripSeparator toolStripSeparator3;
-        private ToolStripLabel toolStripLabel4;
         private ToolStripLabel toolStripLabel6;
-        private ToolStripComboBox toolStripComboBox4;
-        private ToolStripSeparator toolStripSeparator4;
         private ToolStripLabel toolStripLabel31;
         private ToolStripButton toolStripButton4;
         private ToolStripButton toolStripButton5;
-        private ToolStripButton toolStripButton6;
-        private TabPage PageBoutique;
-        private TableLayoutPanel Boutiques;
-        private DataGridView DataBoutique;
-        private TabPage Accueil;
-        private TableLayoutPanel tableLayoutPanel1;
-        private TabControl Admin;
-        private TabPage PageProduits;
+        private ToolStripButton modifierClient;
+        private TabPage pageStock;
         private TableLayoutPanel tableLayoutPanel2;
         private ToolStrip toolStrip1;
         private ToolStripLabel toolStripLabel1;
@@ -1637,23 +1992,59 @@
         private ToolStripButton toolStripButton3;
         private ToolStripButton modifierStock;
         private DataGridView DataStock;
-        private ToolStrip toolStrip10;
+        private TabPage PageBoutique;
+        private TableLayoutPanel Boutiques;
+        private ToolStrip toolStripBoutique;
         private ToolStripLabel toolStripLabel38;
         private ToolStripLabel toolStripLabel39;
-        private ToolStripButton toolStripButton26;
+        private ToolStripButton ajouterBoutique;
         private ToolStripButton toolStripButton27;
-        private ToolStripButton toolStripButton28;
-        private ToolStrip toolStrip9;
+        private ToolStripButton modifierBoutique;
+        private DataGridView DataBoutique;
+        private TabPage Accueil;
+        private TableLayoutPanel tableLayoutPanel1;
+        private TabControl pageAdmin;
+        private DataGridView dataClients;
+        private TabPage pageBouquetPerso;
+        private ToolStrip toolStrip6;
+        private ToolStripLabel toolStripLabel4;
+        private ToolStripComboBox toolStripComboBox4;
+        private ToolStripSeparator toolStripSeparator4;
+        private ToolStripLabel toolStripLabel24;
+        private ToolStripLabel toolStripLabel27;
+        private ToolStripComboBox toolStripComboBox15;
+        private ToolStripSeparator toolStripSeparator15;
         private ToolStripLabel toolStripLabel32;
-        private ToolStripComboBox toolStripComboBox18;
-        private ToolStripSeparator toolStripSeparator18;
+        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton6;
+        private ToolStripButton toolStripButton20;
+        private DataGridView dataGridView4;
+        private TableLayoutPanel tableLayoutPanel10;
+        private TabPage pageEtat;
+        private DataGridView dataGridView5;
+        private TableLayoutPanel tableLayoutPanel12;
+        private TableLayoutPanel Etat;
+        private ToolStrip toolStrip10;
+        private ToolStripLabel toolStripLabel35;
+        private ToolStripLabel toolStripLabel36;
+        private ToolStripButton toolStripButton26;
+        private ToolStripButton toolStripButton28;
+        private ToolStripButton toolStripButton29;
+        private DataGridView dataEtat;
+        private ToolStrip toolStrip9;
         private ToolStripLabel toolStripLabel33;
         private ToolStripLabel toolStripLabel34;
-        private ToolStripComboBox toolStripComboBox19;
-        private ToolStripSeparator toolStripSeparator19;
-        private ToolStripLabel toolStripLabel35;
-        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton23;
         private ToolStripButton toolStripButton24;
         private ToolStripButton toolStripButton25;
+        private TableLayoutPanel tableLayoutPanel13;
+        private TableLayoutPanel tableLayoutPanel11;
+        private ToolStrip toolStrip11;
+        private ToolStripLabel toolStripLabel40;
+        private ToolStripLabel toolStripLabel41;
+        private ToolStripButton toolStripButton17;
+        private ToolStripButton toolStripButton30;
+        private ToolStripButton toolStripButton31;
+        private DataGridView dataBouquetPerso;
     }
 }

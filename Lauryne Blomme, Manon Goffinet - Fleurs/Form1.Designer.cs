@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
@@ -94,7 +95,7 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             //
             // connection
             //
-            connection = new fenetreConnection(this);
+            connection = new fenetreConnection(this, utilisateurMotdePasse, adminMotdePasse);
             Controls.Add(connection);
             connection.Name = "Connection";
             connection.Dock = DockStyle.Fill;

@@ -38,6 +38,37 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
                              $"\r\nWHERE idProduit= (SELECT idProduit FROM produit WHERE libelle_prod = '{(string)ligne.Cells[1].Value}')"
                             + $" AND idMagasin = '{(string)ligne.Cells[0].Value}';";
             }
+            else if(tableConcernee == "magasin")
+            {
+                command = $"DELETE FROM {tableConcernee}\r\n" +
+                             $"\r\nWHERE idMagasin= '{(string)ligne.Cells[0].Value}';";
+            }
+            else if (tableConcernee == "produit")
+            {
+                command = $"DELETE FROM {tableConcernee}\r\n" +
+                             $"\r\nWHERE idProduit= '{(string)ligne.Cells[0].Value}';";
+            }
+            else if (tableConcernee == "client")
+            {
+                command = $"DELETE FROM {tableConcernee}\r\n" +
+                             $"\r\nWHERE idClient= '{(string)ligne.Cells[0].Value}';";
+            }
+            else if (tableConcernee == "bouquet_standard")
+            {
+                command = $"DELETE FROM {tableConcernee}\r\n" +
+                             $"\r\nWHERE idBouquetStandard= '{(string)ligne.Cells[0].Value}';";
+            }
+            else if (tableConcernee == "commande")
+            {
+                command = $"DELETE FROM {tableConcernee}\r\n" +
+                             $"\r\nWHERE idCommande= {ligne.Cells[0].Value};";
+            }
+            else if (tableConcernee == "bouquet_personnalise")
+            {
+                command = $"DELETE FROM {tableConcernee}\r\n" +
+                             $"\r\nWHERE idBouquetPerso= '{(string)ligne.Cells[0].Value}';";
+            }
+           
 
             form1.ExecuteMysqlCommand(command, form1.ConnectionSQL);
 

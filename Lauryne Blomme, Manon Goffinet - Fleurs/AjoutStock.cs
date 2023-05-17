@@ -29,6 +29,7 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
         public void StockData()
         {
             string strcommand = "SELECT idMagasin from magasin;";
+            form1.ConnectionSQL.Close();
             if (form1.ConnectionSQL.State.ToString() != "Open")
             {
                 form1.ConnectionSQL.Open();

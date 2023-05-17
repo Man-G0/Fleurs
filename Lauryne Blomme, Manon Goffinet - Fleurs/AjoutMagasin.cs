@@ -16,7 +16,7 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
     {
         Ajout ajout;
         Form1 form1;
-        public AjoutMagasin( Form1 form1, Ajout ajout)
+        public AjoutMagasin(Form1 form1, Ajout ajout)
         {
             InitializeComponent();
             this.ajout = ajout;
@@ -28,28 +28,51 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             label3.Hide();
             string nom = textBox1.Text;
             string command = "";
-            if (nom!=null)
+            if (nom != "")
             {
-                command = $"SELECT idMagasin FROM magasin" +
-                        $"\r\nORDER BY idMagasin DESC\r\n" +
-                        $"LIMIT 1;";
-                string pk = "";
+                command = $"SELECT count(idMagasin) FROM magasin;";
+                int pk = -1;
 
+                form1.ConnectionSQL.Close();
                 if (form1.ConnectionSQL.State.ToString() != "Open")
                 {
                     form1.ConnectionSQL.Open();
                 }
                 MySqlCommand commandSQL = new MySqlCommand(command, form1.ConnectionSQL);
-                pk = Convert.ToString(commandSQL.ExecuteScalar());
+                pk = Convert.ToInt32(commandSQL.ExecuteScalar());
                 form1.ConnectionSQL.Close();
-                string temp = "";
-                for (int i =1; i < pk.Length; i++)
-                {
-                    temp += pk[i];
-                }
 
-                int n = Convert.ToInt32(temp)+1;
+                
+
+                if (form1.ConnectionSQL.State.ToString() != "Open")
+                {
+                    form1.ConnectionSQL.Open();
+                }
+                int n = pk + 1;
                 string newPk = 'm' + Convert.ToString(n);
+                bool newPkExiste = true;
+                while (newPkExiste)
+                {
+                    if (form1.ConnectionSQL.State.ToString() != "Open")
+                    {
+                        form1.ConnectionSQL.Open();
+                    }
+                    command = $"SELECT count(idMagasin) FROM magasin WHERE idMagasin = '{newPk}';";
+                    commandSQL = new MySqlCommand(command, form1.ConnectionSQL);
+                    int count = Convert.ToInt32(commandSQL.ExecuteScalar());
+                    form1.ConnectionSQL.Close();
+
+                    if (count == 0)
+                    {
+                        newPkExiste = false;
+                    }
+                    else
+                    {
+                        n++;
+                        newPk = 'm' + Convert.ToString(n); 
+                    }
+                }
+                form1.ConnectionSQL.Close();
 
                 label3.Show();
                 command = $"INSERT INTO magasin(idMagasin,nom) VALUES ('{newPk}', '{nom}');";
@@ -59,9 +82,6 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
                 Ok.Show();
                 Non.Hide();
                 Oui.Hide();
-
-
-
             }
             else
             {
@@ -84,5 +104,7 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
         {
             ajout.Close();
         }
+
+
     }
 }
