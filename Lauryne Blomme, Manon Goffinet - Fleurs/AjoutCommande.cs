@@ -245,9 +245,10 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
                     else if (descBouquet == "bouquet perso")
                     {
                         codeEtat = "CPAV";
-                        label12.Text = "Votre commande est passée ! Prise en charge de la commande !";
+                        label12.Text = "Votre commande est passée ! Prise en charge de la commande dans la limite des stocks disponibles !";
                     }
 
+                    form1.ConnectionSQL.Close();
                     if (form1.ConnectionSQL.State.ToString() != "Open")
                     {
                         form1.ConnectionSQL.Open();
@@ -256,13 +257,15 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
                     if(descBouquet == "bouquet standard")
                     {
                         command = $"INSERT INTO commande(idCommande,adresseLivraison,dateLivraison,message,dateCommande,prixTTC,descriptionB,idClient,codeEtat,idMagasin,idBouquetStandard,idBouquetPerso) " +
-                        $"VALUES ({newPk}, '{adresseLivraison}','{dateLivraison}','{message}','{dateCommande}',{prixTtc},'{descBouquet}','{idClient}', '{codeEtat}','{magasin}','{idBouquet}','');";
+                        $"VALUES ({newPk}, '{adresseLivraison}','{dateLivraison}','{message}','{dateCommande}',{prixTtc},'{descBouquet}','{idClient}', '{codeEtat}','{magasin}','{idBouquet}',NULLIF('',''));";
                     }
                     else
                     {
                         command = $"INSERT INTO commande(idCommande,adresseLivraison,dateLivraison,message,dateCommande,prixTTC,descriptionB,idClient,codeEtat,idMagasin,idBouquetStandard,idBouquetPerso) " +
-                        $"VALUES ({newPk}, '{adresseLivraison}','{dateLivraison}','{message}','{dateCommande}',{prixTtc},'{descBouquet}','{idClient}', '{codeEtat}','{magasin}','','{idBouquet}');";
+                         //$"VALUES (100, '10 rue','2023-04-04',' loha','2023-04-04',110,'bouquet perso','c1', 'or','m1',NULLIF('',''),'bp2');";
+                        $"VALUES ({newPk}, '{adresseLivraison}','{dateLivraison}','{message}','{dateCommande}',{prixTtc},'{descBouquet}','{idClient}', '{codeEtat}','{magasin}',NULLIF('',''),'{idBouquet}');";
                     }
+                    
                     form1.ExecuteMysqlCommand(command, form1.ConnectionSQL);
 
                     

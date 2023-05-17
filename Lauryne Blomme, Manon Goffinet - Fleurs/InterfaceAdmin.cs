@@ -33,6 +33,11 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             EtatConnection();
         }
 
+
+        private void Statistique()
+        {
+
+        }
         private void EtatConnection()
         {
             form1.ConnectionSQL.Close();

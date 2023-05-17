@@ -149,6 +149,16 @@
             DataBoutique = new DataGridView();
             Accueil = new TabPage();
             tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayoutPanel14 = new TableLayoutPanel();
+            groupBox4 = new GroupBox();
+            label4 = new Label();
+            groupBox3 = new GroupBox();
+            label3 = new Label();
+            groupBox2 = new GroupBox();
+            label2 = new Label();
+            groupBox1 = new GroupBox();
+            label1 = new Label();
+            button1 = new Button();
             pageAdmin = new TabControl();
             pageBouquetPerso = new TabPage();
             tableLayoutPanel11 = new TableLayoutPanel();
@@ -225,6 +235,12 @@
             toolStripBoutique.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataBoutique).BeginInit();
             Accueil.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel14.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox1.SuspendLayout();
             pageAdmin.SuspendLayout();
             pageBouquetPerso.SuspendLayout();
             tableLayoutPanel11.SuspendLayout();
@@ -1334,18 +1350,137 @@
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel14, 0, 1);
+            tableLayoutPanel1.Controls.Add(button1, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(3, 3);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
+            tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 80F));
             tableLayoutPanel1.Size = new Size(886, 505);
             tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel14
+            // 
+            tableLayoutPanel14.BackColor = Color.Transparent;
+            tableLayoutPanel14.ColumnCount = 2;
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.Controls.Add(groupBox4, 1, 1);
+            tableLayoutPanel14.Controls.Add(groupBox3, 0, 1);
+            tableLayoutPanel14.Controls.Add(groupBox2, 1, 0);
+            tableLayoutPanel14.Controls.Add(groupBox1, 0, 0);
+            tableLayoutPanel14.Dock = DockStyle.Fill;
+            tableLayoutPanel14.Location = new Point(3, 104);
+            tableLayoutPanel14.Name = "tableLayoutPanel14";
+            tableLayoutPanel14.RowCount = 2;
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.Size = new Size(880, 398);
+            tableLayoutPanel14.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(label4);
+            groupBox4.Dock = DockStyle.Fill;
+            groupBox4.ForeColor = Color.FromArgb(152, 186, 92);
+            groupBox4.Location = new Point(443, 202);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(434, 193);
+            groupBox4.TabIndex = 4;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Commandes";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(14, 45);
+            label4.Name = "label4";
+            label4.Size = new Size(71, 26);
+            label4.TabIndex = 2;
+            label4.Text = "label4";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(label3);
+            groupBox3.Dock = DockStyle.Fill;
+            groupBox3.ForeColor = Color.FromArgb(196, 137, 88);
+            groupBox3.Location = new Point(3, 202);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(434, 193);
+            groupBox3.TabIndex = 3;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Clients";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(6, 45);
+            label3.Name = "label3";
+            label3.Size = new Size(70, 26);
+            label3.TabIndex = 1;
+            label3.Text = "label3";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(label2);
+            groupBox2.Dock = DockStyle.Fill;
+            groupBox2.ForeColor = Color.FromArgb(98, 172, 245);
+            groupBox2.Location = new Point(443, 3);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(434, 193);
+            groupBox2.TabIndex = 2;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Bouquets";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(15, 29);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 26);
+            label2.TabIndex = 0;
+            label2.Text = "label2";
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.Transparent;
+            groupBox1.Controls.Add(label1);
+            groupBox1.Dock = DockStyle.Fill;
+            groupBox1.ForeColor = Color.FromArgb(219, 183, 88);
+            groupBox1.Location = new Point(3, 3);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(434, 193);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Produits";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(6, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(65, 26);
+            label1.TabIndex = 0;
+            label1.Text = "label1";
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.None;
+            button1.BackColor = Color.FromArgb(255, 168, 173);
+            button1.Location = new Point(325, 8);
+            button1.Name = "button1";
+            button1.Size = new Size(236, 84);
+            button1.TabIndex = 1;
+            button1.Text = "Bienvenue !";
+            button1.UseVisualStyleBackColor = false;
             // 
             // pageAdmin
             // 
@@ -1850,6 +1985,16 @@
             toolStripBoutique.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DataBoutique).EndInit();
             Accueil.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel14.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             pageAdmin.ResumeLayout(false);
             pageBouquetPerso.ResumeLayout(false);
             tableLayoutPanel11.ResumeLayout(false);
@@ -2046,5 +2191,15 @@
         private ToolStripButton toolStripButton30;
         private ToolStripButton toolStripButton31;
         private DataGridView dataBouquetPerso;
+        private TableLayoutPanel tableLayoutPanel14;
+        private GroupBox groupBox4;
+        private GroupBox groupBox3;
+        private GroupBox groupBox2;
+        private GroupBox groupBox1;
+        private Button button1;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
     }
 }
