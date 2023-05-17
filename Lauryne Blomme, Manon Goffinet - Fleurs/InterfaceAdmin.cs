@@ -31,12 +31,98 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             ClientDataConnection();
             CommandeDataConnection();
             EtatConnection();
+            Statistique();
         }
 
 
         private void Statistique()
         {
+            string l1 = "";
+            string l2 = "";
+            string l3 = "";
+            string l4 = "";
 
+
+            string strcommand = $"SELECT prenomC,nomC, count(*) FROM commande INNER JOIN client ON commande.idCLient = client.idCLient GROUP BY client.idCLient ORDER BY count(*) DESC LIMIT 1;";
+            form1.ConnectionSQL.Close();
+            if (form1.ConnectionSQL.State.ToString() != "Open")
+            {
+                form1.ConnectionSQL.Open();
+            }
+            MySqlCommand command = new MySqlCommand(strcommand, form1.ConnectionSQL);
+            MySqlDataReader reader;
+            reader = command.ExecuteReader();
+            List<string> valeur = new List<string> { };
+
+            while (reader.Read())   // parcours ligne par ligne
+            {
+
+                valeur.Add(reader.GetString(0));
+                valeur.Add(reader.GetString(1));
+                valeur.Add(reader.GetString(2));
+            }
+
+
+            l3 += $"Notre meilleure client(e) de tous les temps \n est :" +
+                $"\n{valeur[0]} {valeur[1]} a commandé en tout {valeur[2]} fois \n\n";
+
+
+
+            strcommand = $"SELECT YEAR(dateCommande) AS Year, COUNT(*) AS TotalOrders, COUNT(DISTINCT idBouquetStandard) as StandardBouquets, COUNT(DISTINCT idBouquetPerso) AS UniqueBouquets\r\nFROM commande\r\nGROUP BY YEAR(dateCommande);";
+
+            form1.ConnectionSQL.Close();
+            if (form1.ConnectionSQL.State.ToString() != "Open")
+            {
+                form1.ConnectionSQL.Open();
+            }
+            command = new MySqlCommand(strcommand, form1.ConnectionSQL);
+            reader = command.ExecuteReader();
+            if (reader.Read())   // parcours ligne par ligne
+            {
+
+                string year = reader["Year"].ToString();
+                string totalOrders = reader["TotalOrders"].ToString();
+                string uniqueBouquets = reader["UniqueBouquets"].ToString();
+                string standardBouquets = reader["StandardBouquets"].ToString();
+
+                l2 += $"Année: {year}: \n" +
+                    $"Bouquets personnalisés différents : {uniqueBouquets} \n" +
+                    $"Nombre Bouquets standards: {standardBouquets} \n";
+
+                l4 += $"Année: {year}, Nombre total de ventes: {totalOrders}, \n";
+            }
+
+            form1.ConnectionSQL.Close();
+            if (form1.ConnectionSQL.State.ToString() != "Open")
+            {
+                form1.ConnectionSQL.Open();
+            }
+
+            strcommand = "SELECT MONTH(dateCommande) AS Month, COUNT(*) AS TotalOrders, COUNT(DISTINCT idBouquetStandard) as StandardBouquets, COUNT(DISTINCT idBouquetPerso) AS UniqueBouquets FROM commande GROUP BY MONTH(dateCommande);";
+            command = new MySqlCommand(strcommand, form1.ConnectionSQL);
+            reader = command.ExecuteReader();
+
+            while (reader.Read())   // parcours ligne par ligne
+            {
+
+                string month = reader["Month"].ToString();
+                string totalOrders = reader["TotalOrders"].ToString();
+                string uniqueBouquets = reader["UniqueBouquets"].ToString();
+                string standardBouquets = reader["StandardBouquets"].ToString();
+
+                // Assuming you have a label control named "lblStatistics" on your form
+
+                l2 += $"Mois: {month}: \n" +
+                    $"Bouquets personnalisés différents : {uniqueBouquets} \n" +
+                    $"Nombre Bouquets standards: {standardBouquets} \n\n";
+
+                l4 += $"Mois : {month}, Nombre total de ventes: {totalOrders}, \n";
+            }
+
+            label1.Text = l1;
+            label2.Text = l2;
+            label3.Text = l3;
+            label4.Text = l4;
         }
         private void EtatConnection()
         {

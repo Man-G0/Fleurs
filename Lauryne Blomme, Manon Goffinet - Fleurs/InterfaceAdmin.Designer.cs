@@ -1397,8 +1397,9 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Dock = DockStyle.Fill;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(14, 45);
+            label4.Location = new Point(3, 29);
             label4.Name = "label4";
             label4.Size = new Size(71, 26);
             label4.TabIndex = 2;
@@ -1419,8 +1420,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Dock = DockStyle.Fill;
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(6, 45);
+            label3.Location = new Point(3, 29);
             label3.Name = "label3";
             label3.Size = new Size(70, 26);
             label3.TabIndex = 1;
@@ -1441,8 +1443,9 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Dock = DockStyle.Fill;
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(15, 29);
+            label2.Location = new Point(3, 29);
             label2.Name = "label2";
             label2.Size = new Size(70, 26);
             label2.TabIndex = 0;
@@ -1464,8 +1467,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Dock = DockStyle.Fill;
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(6, 45);
+            label1.Location = new Point(3, 29);
             label1.Name = "label1";
             label1.Size = new Size(65, 26);
             label1.TabIndex = 0;
