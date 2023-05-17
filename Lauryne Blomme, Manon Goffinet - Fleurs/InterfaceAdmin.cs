@@ -61,7 +61,14 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
                 valeur.Add(reader.GetString(1));
                 valeur.Add(reader.GetString(2));
             }
-
+            /*form1.ConnectionSQL.Close();
+            if (form1.ConnectionSQL.State.ToString() != "Open")
+            {
+                form1.ConnectionSQL.Open();
+            }
+            MySqlCommand commandSQL = new MySqlCommand(command, form1.ConnectionSQL);
+            meilleurClient = Convert.ToString(commandSQL.ExecuteScalar());
+            form1.ConnectionSQL.Close();*/
 
             l3 += $"Notre meilleure client(e) de tous les temps \n est :" +
                 $"\n{valeur[0]} {valeur[1]} a commandé en tout {valeur[2]} fois \n\n";
@@ -118,6 +125,32 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
 
                 l4 += $"Mois : {month}, Nombre total de ventes: {totalOrders}, \n";
             }
+
+            form1.ConnectionSQL.Close();
+            if (form1.ConnectionSQL.State.ToString() != "Open")
+            {
+                form1.ConnectionSQL.Open();
+            }
+
+            strcommand = "SELECT AVG(tarif_vente_unitaire) AS AveragePrice, MAX(tarif_vente_unitaire) AS MaxPrice,MIN(tarif_vente_unitaire) AS MinPrice FROM produit;";
+            command = new MySqlCommand(strcommand, form1.ConnectionSQL);
+            reader = command.ExecuteReader();
+
+            while (reader.Read())   // parcours ligne par ligne
+            {
+
+                string avg = reader["AveragePrice"].ToString();
+                string max = reader["MaxPrice"].ToString();
+                string min = reader["MinPrice"].ToString();
+
+                // Assuming you have a label control named "lblStatistics" on your form
+
+                l1 += $"Prix: \n" +
+                    $"moyen : {avg} \n" +
+                    $"maximal: {max} \n" +
+                    $"minimal : {min} \n";
+            }
+
 
             label1.Text = l1;
             label2.Text = l2;
@@ -384,7 +417,6 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
 
             form1.ConnectionSQL.Close();
         }
-
         private void BouquetPersonnaliseDataConnection()
         {
             form1.ConnectionSQL.Close();
@@ -1051,9 +1083,9 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             DataGridViewRow modif = DataBoutique.Rows[ligne];
             if (modif.Cells[col] != null && modif.Cells[col].Value.ToString() != "")
             {
-                modifierBoutique.Text = modif.Cells[0].Value.ToString();
+                //modifierBoutique.Text = "";
                 modif.Cells[col].Style.BackColor = Color.FromArgb(152, 186, 92);
-                modifierBoutique.Visible = true;
+                //modifierBoutique.Visible = true;
                 string command = $"UPDATE magasin SET nom = '{modif.Cells[col].Value}' WHERE idMagasin = '{modif.Cells[0].Value}';";
                 form1.ExecuteMysqlCommand(command, form1.ConnectionSQL);
 
@@ -1311,11 +1343,9 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
 
         private void DataBouquetStandard_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-            int[] colNonModifiables = { 0, 1, 3, 2, 4, 5 };
-            if (colNonModifiables.Contains(e.ColumnIndex))
-            {
-                e.Cancel = true;
-            }
+
+            e.Cancel = true;
+
         }
         private void DataCommande_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {

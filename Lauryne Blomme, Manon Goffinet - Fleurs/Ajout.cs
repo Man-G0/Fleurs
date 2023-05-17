@@ -104,7 +104,12 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
         }
         private void BouquetPerso()
         {
-
+            ClientSize = new Size(813, 460); 
+            ajoutBouquetPersonnalise = new AjoutBouquetPersonnalise(form1, this);
+            Controls.Add(ajoutBouquetPersonnalise);
+            ajoutBouquetPersonnalise.Name = "ajout bouquet Perso";
+            ajoutBouquetPersonnalise.Dock = DockStyle.Fill;
+            layoutAjoutStock.Controls.Add(ajoutBouquetPersonnalise, 0, 0);
         }
     }
 }

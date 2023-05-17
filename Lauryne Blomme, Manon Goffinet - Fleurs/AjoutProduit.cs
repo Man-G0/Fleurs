@@ -27,6 +27,7 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
         }
         public void StockProduit()
         {
+            form1.ConnectionSQL.Close();
             if (form1.ConnectionSQL.State.ToString() != "Open")
             {
                 form1.ConnectionSQL.Open();
@@ -54,15 +55,15 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             {
                 temp[i] = valeur[i];
             }
-            comboBox2.Items.Clear();
-            comboBox2.Items.AddRange(temp);
+            comboBox5.Items.Clear();
+            comboBox5.Items.AddRange(temp);
             reader.Close();
-            comboBox2.SelectedIndex = 0;
+            comboBox5.SelectedIndex = 0;
 
             form1.ConnectionSQL.Close();
 
             //Pour la date :
-            dateTimePicker1.Value = DateTime.Today;
+            dateTimePicker5.Value = DateTime.Today;
         }
 
         private void Non_Click(object sender, EventArgs e)
@@ -139,9 +140,9 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
                     $"VALUES ('{newPk}', '{nom}','{type}',{tarifVente},'{date}',{moisDebutDispo},{moisFinDispo});";
                 form1.ExecuteMysqlCommand(command, form1.ConnectionSQL);
 
-                label4.Text = "Le produit a été ajouté";
-                label4.ForeColor = Color.FromArgb(152, 186, 92);
-                label4.Visible = true;
+                label30.Text = "Le produit a été ajouté";
+                label30.ForeColor = Color.FromArgb(152, 186, 92);
+                label30.Visible = true;
 
                 Ok.Show();
                 Non.Hide();
@@ -149,14 +150,14 @@ namespace Lauryne_Blomme__Manon_Goffinet___Fleurs
             }
             else
             {
-                label4.Text = "Veuillez remplir tous les champs avec des données valides";
-                label4.ForeColor = Color.FromArgb(192, 0, 0);
-                label4.Show();
+                label30.Text = "Veuillez remplir tous les champs avec des données valides";
+                label30.ForeColor = Color.FromArgb(192, 0, 0);
+                label30.Show();
             }
 
         }
 
-       
+        
     }
 
 }

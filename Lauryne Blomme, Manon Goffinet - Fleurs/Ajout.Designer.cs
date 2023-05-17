@@ -407,6 +407,7 @@
         private AjoutProduit ajoutProduit;
         private AjoutClient ajoutClient;
         private AjoutCommande ajoutCommande;
+        private AjoutBouquetPersonnalise ajoutBouquetPersonnalise;
         private TableLayoutPanel tableLayoutPanel3;
         private Button Non;
         private Button Ok;
